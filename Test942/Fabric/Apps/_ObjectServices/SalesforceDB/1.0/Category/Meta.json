@@ -1,0 +1,83 @@
+{
+  "type" : "lob",
+  "custom" : false,
+  "junction" : false,
+  "customizable" : false,
+  "verbs" : {
+    "get" : "getMapping",
+    "create" : "createMapping",
+    "update" : "updateMapping",
+    "delete" : "deleteMapping"
+  },
+  "entityProperties" : {
+    "BatchMode" : "buffer",
+    "UpdateTimeStampField" : {
+      "DateFormat" : "",
+      "Name" : "LastModifiedDate"
+    },
+    "SoftDeleteFlagField" : {
+      "ActiveValue" : "false",
+      "InactiveValue" : "true",
+      "Name" : "IsDeleted"
+    },
+    "backendMeta" : {
+      "backendObjectName" : "Category__c",
+      "qualifiedName" : "Category__c",
+      "metadataformatterobject" : "{\"name\":\"Category__c\",\"displayName\":\"Category\",\"custom\":true,\"keyPrefix\":\"a01\",\"labelPlural\":\"Category\",\"layoutable\":true,\"activateable\":false,\"updateable\":true,\"urls\":{\"compactLayouts\":\"/services/data/v37.0/sobjects/Category__c/describe/compactLayouts\",\"rowTemplate\":\"/services/data/v37.0/sobjects/Category__c/{ID}\",\"approvalLayouts\":\"/services/data/v37.0/sobjects/Category__c/describe/approvalLayouts\",\"defaultValues\":\"/services/data/v37.0/sobjects/Category__c/defaultValues?recordTypeId&fields\",\"describe\":\"/services/data/v37.0/sobjects/Category__c/describe\",\"quickActions\":\"/services/data/v37.0/sobjects/Category__c/quickActions\",\"layouts\":\"/services/data/v37.0/sobjects/Category__c/describe/layouts\",\"sobject\":\"/services/data/v37.0/sobjects/Category__c\"},\"createable\":true,\"deletable\":true,\"feedEnabled\":false,\"queryable\":true,\"replicateable\":true,\"retrieveable\":true,\"undeletable\":true,\"triggerable\":true,\"mergeable\":false,\"deprecatedAndHidden\":false,\"customSetting\":false,\"searchable\":true,\"entityType\":\"com.kony.adapter.salesforce.SObject\"}"
+    },
+    "designTimeBackendMeta" : {
+      "backendObjectName" : "Category__c",
+      "qualifiedName" : "Category__c",
+      "metadataformatterobject" : "{\"name\":\"Category__c\",\"displayName\":\"Category\",\"custom\":true,\"keyPrefix\":\"a01\",\"labelPlural\":\"Category\",\"layoutable\":true,\"activateable\":false,\"updateable\":true,\"urls\":{\"compactLayouts\":\"/services/data/v37.0/sobjects/Category__c/describe/compactLayouts\",\"rowTemplate\":\"/services/data/v37.0/sobjects/Category__c/{ID}\",\"approvalLayouts\":\"/services/data/v37.0/sobjects/Category__c/describe/approvalLayouts\",\"defaultValues\":\"/services/data/v37.0/sobjects/Category__c/defaultValues?recordTypeId&fields\",\"describe\":\"/services/data/v37.0/sobjects/Category__c/describe\",\"quickActions\":\"/services/data/v37.0/sobjects/Category__c/quickActions\",\"layouts\":\"/services/data/v37.0/sobjects/Category__c/describe/layouts\",\"sobject\":\"/services/data/v37.0/sobjects/Category__c\"},\"createable\":true,\"deletable\":true,\"feedEnabled\":false,\"queryable\":true,\"replicateable\":true,\"retrieveable\":true,\"undeletable\":true,\"triggerable\":true,\"mergeable\":false,\"deprecatedAndHidden\":false,\"customSetting\":false,\"searchable\":true,\"entityType\":\"com.kony.adapter.salesforce.SObject\"}"
+    }
+  },
+  "commonMappings" : [ {
+    "sourceFieldName" : "LastModifiedDate",
+    "targetField" : "LastModifiedDate",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "IsDeleted",
+    "targetField" : "IsDeleted",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "OwnerId",
+    "targetField" : "OwnerId",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "CreatedById",
+    "targetField" : "CreatedById",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "CreatedDate",
+    "targetField" : "CreatedDate",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "LastViewedDate",
+    "targetField" : "LastViewedDate",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "LastReferencedDate",
+    "targetField" : "LastReferencedDate",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "Id",
+    "targetField" : "Id",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "LastModifiedById",
+    "targetField" : "LastModifiedById",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "Name",
+    "targetField" : "Name",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "SystemModstamp",
+    "targetField" : "SystemModstamp",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "Category_Des__c",
+    "targetField" : "Category_Des__c",
+    "type" : "request_response"
+  } ]
+}

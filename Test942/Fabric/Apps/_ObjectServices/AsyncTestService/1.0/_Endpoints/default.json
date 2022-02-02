@@ -1,0 +1,13 @@
+{
+  "name" : "default",
+  "dataAdapterId" : "8",
+  "type" : "CustomDataAdapter",
+  "encryptSecureInfo" : false,
+  "config" : {
+    "authservicetype" : "IdentityProvider",
+    "serviceNamespace" : "asyncNamespace",
+    "advancedSettings" : "",
+    "binaryBackendType" : "NFS"
+  },
+  "jsonpath" : false
+}

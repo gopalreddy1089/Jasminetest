@@ -1,0 +1,13 @@
+[ {
+  "sourceObject" : "EAM_NOTIF",
+  "targetObject" : "EAM_NOTIFICATION_ADDRESS",
+  "relationshipKeys" : [ {
+    "sourceField" : "NOTIF_NUM",
+    "targetField" : "DOC_NUM",
+    "etag" : "a10593df-8104-484d-aa62-bf0952c3c11a"
+  } ],
+  "name" : "EAM_NOTIF_EAM_NOTIFICATION_ADDRESS",
+  "type" : "OneToMany",
+  "custom" : false,
+  "cascadeDelete" : false
+} ]

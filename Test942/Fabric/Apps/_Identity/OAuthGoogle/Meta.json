@@ -1,0 +1,15 @@
+{
+  "name" : "OAuthGoogle",
+  "displayName" : "OAuthGoogle",
+  "type" : "oauth2",
+  "version" : "1.0",
+  "metaPreference" : -1,
+  "config" : "{\"logout_url\":\"https://accounts.google.com/logout\",\"auth_type\":\"oauth2\",\"additional_data\":{\"refresh_request\":[],\"token_request\":[],\"revoke_request\":[],\"profile_request\":[],\"authorize_request\":[]},\"grant_type\":\"authorization_code\",\"scope\":\"openid email profile\",\"profile\":{\"profile_attribute_selectors\":{\"federation_id\":\"sub\",\"last_name\":\"family_name\",\"custom_profile_attribute_selectors\":{},\"display_name\":\"name\",\"first_name\":\"given_name\",\"email\":\"email\"},\"endpoint\":{\"location\":\"url\",\"selector\":\"userinfo_endpoint\",\"type\":\"indirect\",\"value\":\"https://accounts.google.com/.well-known/openid-configuration\"},\"request_method\":\"GET\"},\"authentication_scheme\":\"header\",\"dependent_providers\":[],\"client_authentication\":{\"authentication_scheme\":\"header\",\"client_secret\":\"HnLO2QWbOreB2TXAAMSJeOiU\",\"client_id\":\"185178862708-iu8dhe5tveh7pcnide6575lbvpf2d2ir.apps.googleusercontent.com\"},\"oauthProviderType\":\"google\",\"authorization_endpoint\":\"https://accounts.google.com/o/oauth2/v2/auth\",\"token_endpoint\":\"https://www.googleapis.com/oauth2/v4/token\"}",
+  "policyConfig" : "{\"def_user_status\":\"pending\",\"max_login_fail\":5}",
+  "admissionPolicy" : "no_approval_needed",
+  "identityMeta" : {
+    "allow_sso" : false
+  },
+  "isIntegrityEnabled" : true,
+  "ssoenabled" : false
+}

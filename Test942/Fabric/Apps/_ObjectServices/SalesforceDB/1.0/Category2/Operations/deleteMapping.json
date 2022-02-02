@@ -1,0 +1,55 @@
+{
+  "operationConfig" : {
+    "name" : "deleteCategory22803",
+    "type" : "MappedToBackend",
+    "cachable" : false,
+    "smsEnabled" : false,
+    "security" : "public",
+    "responseEncoding" : "UTF-8",
+    "httpMethod" : "GET",
+    "decodeResponseBody" : false,
+    "referencingEndpoint" : "default",
+    "inputs" : [ {
+      "id" : "Id",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    } ],
+    "iMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><mapper xmlns=\"http://www.kony.com/ns/mapper\"><map inputpath=\"request_in\" outputpath=\"request_out\"><exec-function name=\"kony.gen.obj.Category2.toLOBFields\"/><exec-function name=\"kony.gen.obj.Category2__metadata.toLOBFields\"/></map></mapper>",
+    "oMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><mapper xmlns=\"http://www.kony.com/ns/mapper\"><map inputpath=\"response_in\" outputpath=\"response_out\"><map inputpath=\"Category2__c\" outputpath=\"Category2\"><exec-function name=\"kony.gen.obj.Category2.fromLOBFields\"/></map></map></mapper>",
+    "applyCommonMapping" : true,
+    "applyRequestCommonMapping" : true,
+    "applyResponseCommonMapping" : true,
+    "entityMetadata" : "{\"entityAttributeTypeList\":[{\"name\":\"Id\",\"type\":\"id\",\"updateable\":false,\"createable\":false},{\"name\":\"OwnerId\",\"type\":\"reference\",\"updateable\":true,\"createable\":true},{\"name\":\"IsDeleted\",\"type\":\"boolean\",\"updateable\":false,\"createable\":false},{\"name\":\"Name\",\"type\":\"string\",\"updateable\":false,\"createable\":false},{\"name\":\"CreatedDate\",\"type\":\"datetime\",\"updateable\":false,\"createable\":false},{\"name\":\"CreatedById\",\"type\":\"reference\",\"updateable\":false,\"createable\":false},{\"name\":\"LastModifiedDate\",\"type\":\"datetime\",\"updateable\":false,\"createable\":false},{\"name\":\"LastModifiedById\",\"type\":\"reference\",\"updateable\":false,\"createable\":false},{\"name\":\"SystemModstamp\",\"type\":\"datetime\",\"updateable\":false,\"createable\":false}],\"relationshipTypeList\":[{\"name\":\"AttachedContentDocuments\",\"targetEntityType\":{\"name\":\"AttachedContentDocument\"},\"relationType\":\"ONE_TO_MANY\",\"relationshipAttributeTypeList\":[{\"sourceEntityAttributeType\":{\"name\":\"Id\"},\"targetEntityAttributeType\":{\"name\":\"LinkedEntityId\"}}],\"cascadeDelete\":true},{\"name\":\"Attachments\",\"targetEntityType\":{\"name\":\"Attachment\"},\"relationType\":\"ONE_TO_MANY\",\"relationshipAttributeTypeList\":[{\"sourceEntityAttributeType\":{\"name\":\"Id\"},\"targetEntityAttributeType\":{\"name\":\"ParentId\"}}],\"cascadeDelete\":true},{\"name\":\"RecordAssociatedGroups\",\"targetEntityType\":{\"name\":\"CollaborationGroupRecord\"},\"relationType\":\"ONE_TO_MANY\",\"relationshipAttributeTypeList\":[{\"sourceEntityAttributeType\":{\"name\":\"Id\"},\"targetEntityAttributeType\":{\"name\":\"RecordId\"}}],\"cascadeDelete\":true},{\"name\":\"CombinedAttachments\",\"targetEntityType\":{\"name\":\"CombinedAttachment\"},\"relationType\":\"ONE_TO_MANY\",\"relationshipAttributeTypeList\":[{\"sourceEntityAttributeType\":{\"name\":\"Id\"},\"targetEntityAttributeType\":{\"name\":\"ParentId\"}}],\"cascadeDelete\":true},{\"targetEntityType\":{\"name\":\"ContentDistribution\"},\"relationType\":\"ONE_TO_MANY\",\"relationshipAttributeTypeList\":[{\"sourceEntityAttributeType\":{\"name\":\"Id\"},\"targetEntityAttributeType\":{\"name\":\"RelatedRecordId\"}}],\"cascadeDelete\":true},{\"name\":\"ContentDocumentLinks\",\"targetEntityType\":{\"name\":\"ContentDocumentLink\"},\"relationType\":\"ONE_TO_MANY\",\"relationshipAttributeTypeList\":[{\"sourceEntityAttributeType\":{\"name\":\"Id\"},\"targetEntityAttributeType\":{\"name\":\"LinkedEntityId\"}}],\"cascadeDelete\":true},{\"targetEntityType\":{\"name\":\"ContentVersion\"},\"relationType\":\"ONE_TO_MANY\",\"relationshipAttributeTypeList\":[{\"sourceEntityAttributeType\":{\"name\":\"Id\"},\"targetEntityAttributeType\":{\"name\":\"FirstPublishLocationId\"}}],\"cascadeDelete\":false},{\"name\":\"DuplicateRecordItems\",\"targetEntityType\":{\"name\":\"DuplicateRecordItem\"},\"relationType\":\"ONE_TO_MANY\",\"relationshipAttributeTypeList\":[{\"sourceEntityAttributeType\":{\"name\":\"Id\"},\"targetEntityAttributeType\":{\"name\":\"RecordId\"}}],\"cascadeDelete\":true},{\"name\":\"Emails\",\"targetEntityType\":{\"name\":\"EmailMessage\"},\"relationType\":\"ONE_TO_MANY\",\"relationshipAttributeTypeList\":[{\"sourceEntityAttributeType\":{\"name\":\"Id\"},\"targetEntityAttributeType\":{\"name\":\"RelatedToId\"}}],\"cascadeDelete\":false},{\"name\":\"FeedSubscriptionsForEntity\",\"targetEntityType\":{\"name\":\"EntitySubscription\"},\"relationType\":\"ONE_TO_MANY\",\"relationshipAttributeTypeList\":[{\"sourceEntityAttributeType\":{\"name\":\"Id\"},\"targetEntityAttributeType\":{\"name\":\"ParentId\"}}],\"cascadeDelete\":true},{\"targetEntityType\":{\"name\":\"FeedComment\"},\"relationType\":\"ONE_TO_MANY\",\"relationshipAttributeTypeList\":[{\"sourceEntityAttributeType\":{\"name\":\"Id\"},\"targetEntityAttributeType\":{\"name\":\"ParentId\"}}],\"cascadeDelete\":false},{\"targetEntityType\":{\"name\":\"FeedItem\"},\"relationType\":\"ONE_TO_MANY\",\"relationshipAttributeTypeList\":[{\"sourceEntityAttributeType\":{\"name\":\"Id\"},\"targetEntityAttributeType\":{\"name\":\"ParentId\"}}],\"cascadeDelete\":true},{\"name\":\"Notes\",\"targetEntityType\":{\"name\":\"Note\"},\"relationType\":\"ONE_TO_MANY\",\"relationshipAttributeTypeList\":[{\"sourceEntityAttributeType\":{\"name\":\"Id\"},\"targetEntityAttributeType\":{\"name\":\"ParentId\"}}],\"cascadeDelete\":true},{\"name\":\"NotesAndAttachments\",\"targetEntityType\":{\"name\":\"NoteAndAttachment\"},\"relationType\":\"ONE_TO_MANY\",\"relationshipAttributeTypeList\":[{\"sourceEntityAttributeType\":{\"name\":\"Id\"},\"targetEntityAttributeType\":{\"name\":\"ParentId\"}}],\"cascadeDelete\":true},{\"name\":\"ProcessInstances\",\"targetEntityType\":{\"name\":\"ProcessInstance\"},\"relationType\":\"ONE_TO_MANY\",\"relationshipAttributeTypeList\":[{\"sourceEntityAttributeType\":{\"name\":\"Id\"},\"targetEntityAttributeType\":{\"name\":\"TargetObjectId\"}}],\"cascadeDelete\":true},{\"name\":\"ProcessSteps\",\"targetEntityType\":{\"name\":\"ProcessInstanceHistory\"},\"relationType\":\"ONE_TO_MANY\",\"relationshipAttributeTypeList\":[{\"sourceEntityAttributeType\":{\"name\":\"Id\"},\"targetEntityAttributeType\":{\"name\":\"TargetObjectId\"}}],\"cascadeDelete\":false},{\"name\":\"TopicAssignments\",\"targetEntityType\":{\"name\":\"TopicAssignment\"},\"relationType\":\"ONE_TO_MANY\",\"relationshipAttributeTypeList\":[{\"sourceEntityAttributeType\":{\"name\":\"Id\"},\"targetEntityAttributeType\":{\"name\":\"EntityId\"}}],\"cascadeDelete\":true}],\"name\":\"Category2__c\",\"entityType\":\"com.kony.adapter.salesforce.SObject\"}",
+    "opcode" : "delete",
+    "backendMeta" : {
+      "qualifiedObjectName" : "Category2__c",
+      "backendObjectName" : "Category2__c"
+    },
+    "relationshipHierarchyMapping" : {
+      "children" : [ ],
+      "name" : "Category2",
+      "actions" : {
+        "delete" : true
+      },
+      "selected" : true
+    },
+    "requestXmlMappingOverride" : false,
+    "responseXmlMappingOverride" : false,
+    "mapperData" : [ {
+      "name" : "base mapper1",
+      "order" : 1,
+      "iMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><mapper xmlns=\"http://www.kony.com/ns/mapper\"><map inputpath=\"request_in\" outputpath=\"request_out\"><exec-function name=\"kony.gen.obj.Category2.toLOBFields\"/><exec-function name=\"kony.gen.obj.Category2__metadata.toLOBFields\"/></map></mapper>",
+      "oMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><mapper xmlns=\"http://www.kony.com/ns/mapper\"><map inputpath=\"response_in\" outputpath=\"response_out\"><map inputpath=\"Category2__c\" outputpath=\"Category2\"><exec-function name=\"kony.gen.obj.Category2.fromLOBFields\"/></map></map></mapper>",
+      "requestXmlMappingOverride" : false,
+      "responseXmlMappingOverride" : false,
+      "disabled" : false,
+      "applyCommonMapping" : true,
+      "applyRequestCommonMapping" : true,
+      "applyResponseCommonMapping" : true
+    } ]
+  },
+  "enableFrontendUrl" : false
+}

@@ -1,0 +1,13 @@
+[ {
+  "sourceObject" : "venuehierarchy",
+  "targetObject" : "eventhierarchy",
+  "relationshipKeys" : [ {
+    "sourceField" : "venue_id",
+    "targetField" : "venue_id",
+    "etag" : "deaf5e0e-9cfa-4301-bc85-889f324a7c29"
+  } ],
+  "name" : "venuehierarchy_eventhierarchy",
+  "type" : "OneToMany",
+  "custom" : false,
+  "cascadeDelete" : false
+} ]

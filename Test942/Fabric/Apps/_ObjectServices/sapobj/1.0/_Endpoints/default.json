@@ -1,0 +1,19 @@
+{
+  "name" : "default",
+  "type" : "sky",
+  "url" : "http://connect.kony.com:35099/v1/",
+  "encryptSecureInfo" : false,
+  "config" : {
+    "authservicetype" : "IdentityProvider",
+    "Scheme" : "http",
+    "HeaderPrefix" : "KonySAP",
+    "identityProvider" : "SAP1440",
+    "Gatewayaddress" : "connect.kony.com",
+    "Port" : "35099",
+    "identityProviderType" : "sky",
+    "UserName" : "eam_qa1",
+    "Password" : "eamqa1",
+    "CallerId" : "SAP"
+  },
+  "jsonpath" : false
+}

@@ -1,0 +1,28 @@
+{
+    "AS_Button_da129a8ed10b419e9120f86462918bab": {
+        "id": "AS_Button_da129a8ed10b419e9120f86462918bab",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "Form1",
+            "type": "forms",
+            "platform": "",
+            "KUID": "f068a324c55b44c3b22facaf77a2104b"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__h2afd614c263490fba437570986603a7",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "boxDownload",
+            "display": "boxDownload",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null,
+            "source": "module"
+        }]
+    }
+}

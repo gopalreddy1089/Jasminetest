@@ -1,0 +1,28 @@
+{
+    "AS_Button_h399d0f6f9e144eb9ca3531db106cf9f": {
+        "id": "AS_Button_h399d0f6f9e144eb9ca3531db106cf9f",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "Form1",
+            "type": "forms",
+            "platform": "",
+            "KUID": "f068a324c55b44c3b22facaf77a2104b"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__a78b7c4c02b6426f8bbd15726a028138",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "boxLogin",
+            "display": "boxLogin",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null,
+            "source": "module"
+        }]
+    }
+}

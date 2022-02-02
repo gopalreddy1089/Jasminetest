@@ -1,0 +1,204 @@
+{
+    "services": [
+        {
+            "serviceId": "7e49690a-be81-4331-9929-ede32a5fa391",
+            "serviceName": "AsyncTestService",
+            "serviceETag": "114ab304-c376-4c6b-9e39-a12ac82d6736",
+            "objects": [
+                {
+                    "objectId": "14114",
+                    "objectName": "File",
+                    "objectETag": "d9e6a724-7706-426a-be0b-c5097df7e93f"
+                }
+            ]
+        },
+        {
+            "serviceId": "131b0ed4-3b7c-4ee3-a21d-ad2286fc0749",
+            "serviceName": "BooleanConversionService",
+            "serviceETag": "66c754b9-2449-48e7-8e25-bc1a8de340bc",
+            "objects": [
+                {
+                    "objectId": "14092",
+                    "objectName": "designations",
+                    "objectETag": "40507a18-1ef5-4196-8cf4-984144acb307"
+                },
+                {
+                    "objectId": "14093",
+                    "objectName": "employees",
+                    "objectETag": "2b840e10-8b7b-4f97-9677-c270bfcdc2f6"
+                }
+            ]
+        },
+        {
+            "serviceId": "5f07b7de-dedb-4071-9019-7cf72668cd93",
+            "serviceName": "boxObjectService",
+            "serviceETag": "c7af6462-625a-44a5-862d-648fb3b522c1",
+            "objects": [
+                {
+                    "objectId": "14084",
+                    "objectName": "image",
+                    "objectETag": "e1812d21-9825-4df7-9782-62bbe0518c45"
+                }
+            ]
+        },
+        {
+            "serviceId": "2123f347-6e4a-458f-9be7-7a30b73490f8",
+            "serviceName": "ContactOS",
+            "serviceETag": "19db2bdf-9ed8-45ff-9067-b9ea6509a36e",
+            "objects": [
+                {
+                    "objectId": "14055",
+                    "objectName": "binaryContact",
+                    "objectETag": "e3cc2c7e-735f-4856-8da7-d653442bb369"
+                },
+                {
+                    "objectId": "14056",
+                    "objectName": "contact",
+                    "objectETag": "20d8a581-937d-4a6d-853d-9b0881c2afdd"
+                }
+            ]
+        },
+        {
+            "serviceId": "d41b97c3-a8b9-4809-9cdd-b84d43265368",
+            "serviceName": "EventOS",
+            "serviceETag": "a1f2bcba-4f07-4ed3-bd75-7b4764976b0c",
+            "objects": [
+                {
+                    "objectId": "14013",
+                    "objectName": "event",
+                    "objectETag": "cfc8eb7b-6fde-4bc2-9242-c7f1a9eb57b3"
+                },
+                {
+                    "objectId": "14014",
+                    "objectName": "event_speaker",
+                    "objectETag": "709c2328-de45-4b46-9bc2-5d4e64a615c0"
+                },
+                {
+                    "objectId": "14015",
+                    "objectName": "speaker",
+                    "objectETag": "724d9805-367b-41ce-a747-75d9af345cd3"
+                },
+                {
+                    "objectId": "14016",
+                    "objectName": "venue",
+                    "objectETag": "54b06f1f-4071-411b-8691-79267082c5ef"
+                }
+            ]
+        },
+        {
+            "serviceId": "d0b3d9ad-dda5-449e-a511-d587d6ed9690",
+            "serviceName": "RDBMSHierarchy",
+            "serviceETag": "430fea09-b042-45d8-9b12-52d2b7d142c7",
+            "objects": [
+                {
+                    "objectId": "13991",
+                    "objectName": "eventhierarchy",
+                    "objectETag": "ee49cb36-b435-434f-b0e7-a6907175e510"
+                },
+                {
+                    "objectId": "13992",
+                    "objectName": "venuehierarchy",
+                    "objectETag": "ab3b13f3-df5b-4c0e-b527-7794536d7765"
+                }
+            ]
+        },
+        {
+            "serviceId": "f3c6718d-71a6-4f66-b95a-1063141dea16",
+            "serviceName": "RDBMSObjectService",
+            "serviceETag": "da68059c-5c61-4537-a3f8-f0bd52965e05",
+            "objects": [
+                {
+                    "objectId": "13959",
+                    "objectName": "media",
+                    "objectETag": "50411884-52bb-4836-b2fd-e666bebd9cb6"
+                },
+                {
+                    "objectId": "13960",
+                    "objectName": "product",
+                    "objectETag": "420fd670-5216-49fe-8031-82f5b1a096c9"
+                }
+            ]
+        },
+        {
+            "serviceId": "56851bbd-2f5a-4728-affe-009d27468d23",
+            "serviceName": "S3ObjectSvc",
+            "serviceETag": "9e78ed7f-f43a-4ea4-a1fd-92048077df10",
+            "objects": [
+                {
+                    "objectId": "13950",
+                    "objectName": "getBinary",
+                    "objectETag": "62888b27-8ca2-456b-bf7b-e96352f0924f"
+                },
+                {
+                    "objectId": "13951",
+                    "objectName": "uploadBinary",
+                    "objectETag": "5214e06a-42bb-4389-9797-1ca38be38a45"
+                }
+            ]
+        },
+        {
+            "serviceId": "5e15d5f7-e4b0-4a68-9ad1-a0d3728fc1ea",
+            "serviceName": "SalesforceDB",
+            "serviceETag": "419dc48c-1aba-448b-9e6a-6a1079b3fb9d",
+            "objects": [
+                {
+                    "objectId": "13929",
+                    "objectName": "Category",
+                    "objectETag": "853c78ae-6599-47e5-80ca-186da8b2326f"
+                },
+                {
+                    "objectId": "13930",
+                    "objectName": "Category2",
+                    "objectETag": "34632386-f0b8-4301-9801-3dcb1fcd7586"
+                }
+            ]
+        },
+        {
+            "serviceId": "c86e7413-e613-43e6-ac1a-e76749d5410c",
+            "serviceName": "sapobj",
+            "serviceETag": "a1c7274c-3a67-4510-98fc-fddbeec4fee9",
+            "objects": [
+                {
+                    "objectId": "13872",
+                    "objectName": "EAM_ADDRESS",
+                    "objectETag": "ba3720a3-2bb8-4a24-83d8-8453bef712a8"
+                },
+                {
+                    "objectId": "13873",
+                    "objectName": "EAM_NOTIF",
+                    "objectETag": "df8f9173-3597-4987-b898-13f8688ad6af"
+                },
+                {
+                    "objectId": "13874",
+                    "objectName": "EAM_NOTIFICATION_ADDRESS",
+                    "objectETag": "c368201d-0d31-4f40-9a78-913d9afdc9d4"
+                },
+                {
+                    "objectId": "13875",
+                    "objectName": "EAM_NOTIF_DIST",
+                    "objectETag": "8433ec42-10f9-47d2-aee9-8bc142ee5f49"
+                },
+                {
+                    "objectId": "13876",
+                    "objectName": "abc",
+                    "objectETag": "e6f9aab5-bf6b-4998-9167-97377a73f6a8"
+                }
+            ]
+        },
+        {
+            "serviceId": "ddb5d6d0-ccb4-445b-b4eb-8d9574bbb861",
+            "serviceName": "StorageObjectService",
+            "serviceETag": "11eb8db7-7784-4c70-baf1-a5fbc6454fa4",
+            "objects": [
+                {
+                    "objectId": "13850",
+                    "objectName": "binary",
+                    "objectETag": "83678f2a-6ea7-45db-9cac-49aeb8d78eee"
+                }
+            ]
+        }
+    ],
+    "appInfo": {
+        "serviceDocEtag": "0000017EB068DF50"
+    }
+}

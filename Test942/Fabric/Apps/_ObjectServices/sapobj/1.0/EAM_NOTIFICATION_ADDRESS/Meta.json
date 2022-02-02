@@ -1,0 +1,79 @@
+{
+  "type" : "lob",
+  "custom" : false,
+  "junction" : false,
+  "customizable" : false,
+  "verbs" : {
+    "get" : "getMapping",
+    "update" : "updateMapping",
+    "create" : "createMapping",
+    "partialupdate" : "partialupdateMapping",
+    "delete" : "deleteMapping"
+  },
+  "entityProperties" : {
+    "UpdateTimeStampField" : {
+      "DateFormat" : "yyyyMMddHHmmss",
+      "Name" : "TIMESTAMP"
+    },
+    "SoftDeleteFlagField" : {
+      "ActiveValue" : null,
+      "InactiveValue" : "X",
+      "Name" : "DELETE_IND"
+    },
+    "backendMeta" : {
+      "dataObjectName" : "EAM_DOB_NOTIF",
+      "libraryName" : "_SKYTECH_EAM",
+      "businessObjectName" : "EAM_NOTIFICATION_ADDRESS"
+    },
+    "designTimeBackendMeta" : {
+      "dataObjectName" : "EAM_DOB_NOTIF",
+      "libraryName" : "_SKYTECH_EAM",
+      "businessObjectName" : "EAM_NOTIFICATION_ADDRESS"
+    }
+  },
+  "commonMappings" : [ {
+    "sourceFieldName" : "ADDRESS_ID",
+    "targetField" : "ADDRESS_ID",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "PARTNER_TYPE",
+    "targetField" : "PARTNER_TYPE",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "DOC_NUM",
+    "targetField" : "DOC_NUM",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "DELETE_IND",
+    "targetField" : "DELETE_IND",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "COUNTER",
+    "targetField" : "COUNTER",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "PRIM_SEC_FLAG",
+    "targetField" : "PRIM_SEC_FLAG",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "OPMODE",
+    "targetField" : "OPMODE",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "ADDR_TYPE_ID",
+    "targetField" : "ADDR_TYPE_ID",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "CONT_SEQUENCE",
+    "targetField" : "CONT_SEQUENCE",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "TIMESTAMP",
+    "targetField" : "TIMESTAMP",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "ADDR_TYPE",
+    "targetField" : "ADDR_TYPE",
+    "type" : "request_response"
+  } ]
+}

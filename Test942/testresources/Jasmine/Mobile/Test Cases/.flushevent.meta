@@ -1,0 +1,134 @@
+{
+    "testCaseName": "flushevent",
+    "testSuiteName": "Test Cases",
+    "channelName": "Mobile",
+    "steps": [
+        {
+            "actionName": "Wait For",
+            "actionIconClassName": "assets/widget_icons/loading.svg",
+            "activeActionIconClassName": "assets/widget_icons/activeloading.svg",
+            "entity": "Form1.btnFlushEvents",
+            "contextMenu": {
+                "isAssertEnabled": false,
+                "isWaitForEnabled": false,
+                "isScrollToRowEnabled": false,
+                "isScreenShotEnabled": true
+            },
+            "actualMessage": {
+                "UUID": "d0d91a8c-5104-d3f0-0b08-63cd742822e7",
+                "messageType": "waitFor",
+                "messageData": {
+                    "widgetType": "waitFor",
+                    "metadata": {
+                        "waitFor": "Form1.btnFlushEvents"
+                    },
+                    "appName": "Test942"
+                }
+            },
+            "codeNotReady": false
+        },
+        {
+            "displayReady": true,
+            "actionName": "Click",
+            "actionIconClassName": "assets/widget_icons/tap.svg",
+            "activeActionIconClassName": "assets/widget_icons/activetap.svg",
+            "entity": "Form1.btnFlushEvents",
+            "contextMenu": {
+                "isScrollToRowEnabled": false,
+                "isScreenShotEnabled": true
+            },
+            "actualMessage": {
+                "messageType": "Record",
+                "messageData": {
+                    "widgetPath": "Form1.btnFlushEvents",
+                    "widgetType": "button",
+                    "actionType": "click",
+                    "appName": "Test942"
+                },
+                "UUID": "0ce26c2b-3d33-49ba-ab4d-c7cc79fa7da3"
+            },
+            "codeNotReady": false,
+            "metaEditable": false
+        },
+        {
+            "actionName": "Assert",
+            "actionIconClassName": "assets/widget_icons/assert.svg",
+            "activeActionIconClassName": "assets/widget_icons/activeassert.svg",
+            "entity": "Form1.btnFlushEvents",
+            "metaEditable": true,
+            "dispMeta": {
+                "prop": ""
+            },
+            "dataVariable": "btnFlushEvents",
+            "contextMenu": {
+                "isAssertEnabled": false,
+                "isWaitForEnabled": false,
+                "isScrollToWidgetEnabled": false,
+                "isScrollToRowEnabled": false,
+                "isScreenShotEnabled": true
+            },
+            "actualMessage": {
+                "UUID": "afb50796-30ef-d708-094e-2b5ae296cd22",
+                "messageType": "Assert",
+                "messageData": {
+                    "widgetType": "Assert",
+                    "metadata": {
+                        "assertType": "toEqual",
+                        "assertOnElement": "Form1.btnFlushEvents",
+                        "assertOnProperty": "",
+                        "negationEnabled": false,
+                        "dataVariable": "btnFlushEvents"
+                    },
+                    "appName": "Test942"
+                }
+            },
+            "codeNotReady": false
+        },
+        {
+            "actionName": "Assert",
+            "actionIconClassName": "assets/widget_icons/assert.svg",
+            "activeActionIconClassName": "assets/widget_icons/activeassert.svg",
+            "entity": "Form1.flushlbl",
+            "metaEditable": true,
+            "dispMeta": {
+                "prop": "text"
+            },
+            "dataVariable": "flushlbl",
+            "contextMenu": {
+                "isAssertEnabled": false,
+                "isWaitForEnabled": false,
+                "isScrollToWidgetEnabled": false,
+                "isScrollToRowEnabled": false,
+                "isScreenShotEnabled": true
+            },
+            "actualMessage": {
+                "UUID": "ef5b5e68-2adb-f1a4-e708-63b5c9106768",
+                "messageType": "Assert",
+                "messageData": {
+                    "widgetType": "Assert",
+                    "metadata": {
+                        "assertType": "toEqual",
+                        "assertOnElement": "Form1.flushlbl",
+                        "assertOnProperty": "text",
+                        "negationEnabled": false,
+                        "dataVariable": "flushlbl"
+                    },
+                    "appName": "Test942"
+                }
+            },
+            "codeNotReady": false,
+            "stepError": false
+        }
+    ],
+    "_currentForm": "Test942/Form1",
+    "timeout": 0,
+    "dataFileName": "flushevent_data",
+    "dataFileVarName": "testcaseData_1642395693245",
+    "datasetName": "dataset",
+    "appName": "Test942",
+    "usedBy": {
+        "Test942": [
+            "androidtestsuite.js"
+        ]
+    }
+}

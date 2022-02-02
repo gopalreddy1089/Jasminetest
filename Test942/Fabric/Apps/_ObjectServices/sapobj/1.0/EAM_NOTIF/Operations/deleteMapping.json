@@ -1,0 +1,70 @@
+{
+  "operationConfig" : {
+    "name" : "deleteEAMNOTIF4040",
+    "type" : "MappedToBackend",
+    "cachable" : false,
+    "smsEnabled" : false,
+    "security" : "authorized_app_user",
+    "responseEncoding" : "UTF-8",
+    "httpMethod" : "GET",
+    "decodeResponseBody" : false,
+    "referencingEndpoint" : "default",
+    "inputs" : [ {
+      "id" : "NOTIF_NUM",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    } ],
+    "headers" : [ {
+      "id" : "KonySAP-Session-Key",
+      "scope" : "request"
+    } ],
+    "applyCommonMapping" : true,
+    "applyRequestCommonMapping" : true,
+    "applyResponseCommonMapping" : true,
+    "entityMetadata" : "{\"skyEntityMetadataRuntime\":{\"fMap\":{\"NOTIF_NUM\":\"EAM_NOTIF_DIST.NOTIF_NUM\"},\"relatedEntities\":[{\"relationshipType\":\"ONE_TO_MANY\",\"service\":\"EAM_DOB_NOTIF\",\"relationshipKeys\":[{\"parentKey\":\"NOTIF_NUM\",\"childKey\":\"DOC_REF_NUM\"}],\"entityName\":\"EAM_ATTACH\"},{\"relationshipType\":\"ONE_TO_MANY\",\"relatedEntities\":[{\"relationshipType\":\"MANY_TO_ONE\",\"service\":\"EAM_DOB_NOTIF\",\"relationshipKeys\":[{\"parentKey\":\"ADDRESS_ID\",\"childKey\":\"ADDRNO\"}],\"entityName\":\"EAM_ADDRESS\"}],\"service\":\"EAM_DOB_NOTIF\",\"relationshipKeys\":[{\"parentKey\":\"NOTIF_NUM\",\"childKey\":\"DOC_NUM\"}],\"entityName\":\"EAM_NOTIFICATION_ADDRESS\"},{\"relationshipType\":\"ONE_TO_MANY\",\"relatedEntities\":[{\"relationshipType\":\"MANY_TO_ONE\",\"service\":\"EAM_DOB_NOTIF\",\"relationshipKeys\":[{\"parentKey\":\"EQUIP_ASSET_VAL\",\"childKey\":\"ASSET\"}],\"entityName\":\"EAM_ASSET_EQUIP\"},{\"relationshipType\":\"MANY_TO_ONE\",\"service\":\"EAM_DOB_NOTIF\",\"relationshipKeys\":[{\"parentKey\":\"FUNC_LOCATION\",\"childKey\":\"ASSET\"}],\"entityName\":\"EAM_ASSET_FLOC\"}],\"service\":\"EAM_DOB_NOTIF\",\"relationshipKeys\":[{\"parentKey\":\"NOTIF_NUM\",\"childKey\":\"NOTIF_NUM\"}],\"entityName\":\"EAM_NOTIF_ASSET\"},{\"relationshipType\":\"ONE_TO_MANY\",\"service\":\"EAM_DOB_NOTIF\",\"relationshipKeys\":[{\"parentKey\":\"NOTIF_NUM\",\"childKey\":\"NOTIF_NUM\"}],\"entityName\":\"EAM_NOTIF_STATUS_HIST\"},{\"relationshipType\":\"MANY_TO_ONE\",\"service\":\"EAM_DOB_NOTIF\",\"relationshipKeys\":[{\"parentKey\":\"USERID\",\"childKey\":\"USERID\"}],\"entityName\":\"EAM_NOTIF_USER\"}],\"sQuery\":\"EAM_NOTIF_DIST.DIST_KEY\",\"service\":\"EAM_DOB_NOTIF\",\"config\":{\"OPMODE\":\"true\"},\"entityName\":\"EAM_NOTIF\"}}",
+    "opcode" : "delete",
+    "backendMeta" : {
+      "dataObjectName" : "EAM_DOB_NOTIF",
+      "libraryName" : "_SKYTECH_EAM",
+      "businessObjectName" : "EAM_NOTIF"
+    },
+    "relationshipHierarchyMapping" : {
+      "children" : [ {
+        "children" : [ {
+          "children" : [ ],
+          "name" : "EAM_ADDRESS",
+          "actions" : {
+            "delete" : true
+          },
+          "selected" : false
+        } ],
+        "name" : "EAM_NOTIFICATION_ADDRESS",
+        "actions" : {
+          "delete" : true
+        },
+        "selected" : false
+      } ],
+      "name" : "EAM_NOTIF",
+      "actions" : {
+        "delete" : true
+      },
+      "selected" : true
+    },
+    "requestXmlMappingOverride" : false,
+    "responseXmlMappingOverride" : false,
+    "mapperData" : [ {
+      "name" : "base mapper1",
+      "order" : 1,
+      "requestXmlMappingOverride" : false,
+      "responseXmlMappingOverride" : false,
+      "disabled" : false,
+      "applyCommonMapping" : true,
+      "applyRequestCommonMapping" : true,
+      "applyResponseCommonMapping" : true
+    } ]
+  },
+  "enableFrontendUrl" : false
+}

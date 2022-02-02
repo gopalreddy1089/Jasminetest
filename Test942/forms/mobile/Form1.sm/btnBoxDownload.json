@@ -1,0 +1,52 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "50dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "62dp"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "saa139b354d04ff480382468299c0b9a",
+    "_text_": "box download",
+    "_top_": {
+        "type": "string",
+        "value": "693dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "300dp"
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "sf2110a2822c4c8f9d1ebd07c3dd9458",
+    "id": "btnBoxDownload",
+    "ide_onClick": "AS_Button_da129a8ed10b419e9120f86462918bab",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": false,
+    "kuid": "ga747c6dc40146a699f1b8351bbf819f",
+    "name": "kony.ui.Button",
+    "parent": "Form1",
+    "pf": "Form1",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "wType": "Button",
+    "zindex": 1
+}

@@ -1,0 +1,7 @@
+{
+  "serviceType" : "integration",
+  "dataAdapter" : {
+    "name" : "S3 adapter",
+    "version" : "1.0"
+  }
+}

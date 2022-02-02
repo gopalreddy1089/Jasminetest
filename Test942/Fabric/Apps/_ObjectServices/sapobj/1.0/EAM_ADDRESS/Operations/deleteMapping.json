@@ -1,0 +1,56 @@
+{
+  "operationConfig" : {
+    "name" : "deleteEAMADDRESS5062",
+    "type" : "MappedToBackend",
+    "cachable" : false,
+    "smsEnabled" : false,
+    "security" : "authorized_app_user",
+    "responseEncoding" : "UTF-8",
+    "httpMethod" : "GET",
+    "decodeResponseBody" : false,
+    "referencingEndpoint" : "default",
+    "inputs" : [ {
+      "id" : "ADDRNO",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    } ],
+    "headers" : [ {
+      "id" : "KonySAP-Session-Key",
+      "scope" : "request"
+    } ],
+    "applyCommonMapping" : true,
+    "applyRequestCommonMapping" : true,
+    "applyResponseCommonMapping" : true,
+    "entityMetadata" : "{\"skyEntityMetadataRuntime\":{\"fMap\":{\"ADDRNO\":\"EAM_NOTIFICATION_ADDRESS.ADDRESS_ID\"},\"sQuery\":\"EAM_NOTIF_DIST.DIST_KEY,EAM_NOTIF.NOTIF_NUM,EAM_NOTIFICATION_ADDRESS.DOC_NUM\",\"service\":\"EAM_DOB_NOTIF\",\"config\":{\"OPMODE\":\"true\"},\"entityName\":\"EAM_ADDRESS\"}}",
+    "opcode" : "delete",
+    "backendMeta" : {
+      "dataObjectName" : "EAM_DOB_NOTIF",
+      "libraryName" : "_SKYTECH_EAM",
+      "businessObjectName" : "EAM_ADDRESS"
+    },
+    "relationshipHierarchyMapping" : {
+      "children" : [ ],
+      "name" : "EAM_ADDRESS",
+      "actions" : {
+        "delete" : true
+      },
+      "selected" : true
+    },
+    "requestXmlMappingOverride" : false,
+    "responseXmlMappingOverride" : false,
+    "mapperData" : [ {
+      "name" : "base mapper1",
+      "order" : 1,
+      "requestXmlMappingOverride" : false,
+      "responseXmlMappingOverride" : false,
+      "disabled" : false,
+      "applyCommonMapping" : true,
+      "applyRequestCommonMapping" : true,
+      "applyResponseCommonMapping" : true
+    } ]
+  },
+  "enableFrontendUrl" : false
+}

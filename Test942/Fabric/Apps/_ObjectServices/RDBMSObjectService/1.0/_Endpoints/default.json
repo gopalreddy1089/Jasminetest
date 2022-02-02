@@ -1,0 +1,19 @@
+{
+  "name" : "default",
+  "dataAdapterId" : "1",
+  "type" : "CustomDataAdapter",
+  "encryptSecureInfo" : false,
+  "config" : {
+    "authservicetype" : "IdentityProvider",
+    "jdbcClass" : "com.mysql.jdbc.Driver",
+    "jdbcUrl" : "jdbc:mysql://10.10.24.186:3306",
+    "userId" : "mfuser",
+    "password" : "kony123",
+    "advancedSettings" : null,
+    "maxPoolSize" : null,
+    "connectionTimeout" : null,
+    "identityProvider" : "userstore",
+    "identityProviderType" : "userstore"
+  },
+  "jsonpath" : false
+}

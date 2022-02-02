@@ -1,0 +1,6600 @@
+{
+  "operationConfig" : {
+    "name" : "partialupdateEAMNOTIF1058",
+    "type" : "MappedToBackend",
+    "cachable" : false,
+    "smsEnabled" : false,
+    "security" : "authorized_app_user",
+    "responseEncoding" : "UTF-8",
+    "httpMethod" : "GET",
+    "decodeResponseBody" : false,
+    "referencingEndpoint" : "default",
+    "inputs" : [ {
+      "id" : "NOTIF_NUM",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "NOTIF_TYPE",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "SHORT_TEXT",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "NOTIF_DATE",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "NOTIF_TIME",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "NOTIF_DATE_TIME",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "FUNC_LOCATION",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "FLOCN_DESC",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "EQUIP_NUM",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "TECH_OBJ_DESC",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "NOTF_REP_PER_NAM",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "CATALOG_PROFILE",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "CODE_GRP_PART",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "PART_OBJECT",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "CODE_GRP_PROBLEM",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "PROBLEM",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "PROBLEM_TEXT",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "CODE_GRP_CAUSE",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "CAUSE_CODE",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "PRIORITY_TYPE",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "PRIORITY",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "ORDER_NUM",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "ORDER_TYPE",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "ORDER_TEXT",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "INTERNAL_NUMBER",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "REJECTED",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "OPMODE",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "SERVER_GROUP",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "SERVER_ID",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "CODE_GRP_CODING",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "CODING_CODE",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "CONVERT_TO_WO",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "MASTER_WRRNTY_NO",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "WRRNTY_START_DT",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "WRRNTY_END_DT",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "MANU_WRRNTY_STDT",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "MANU_WRRNTY_ENDT",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "WORK_CENTER",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "WC_SHORT_DESC",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "SYS_STATUS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "USERID",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "USER_ST",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "USER_STATUS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "USERSTATUS_TXT",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "STAT_PROF",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "TIME_ZONE",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "ACCEPTED",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "PLANPLANT",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "LOC_ACC",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "ASSEMBLY",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "BREAKDOWN",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "STRMLFNDATE",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "ENDMLFNDATE",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "STRMLFNTIME",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "ENDMLFNTIME",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "STRML_DATE_TIME",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "ENDML_DATE_TIME",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "DOWNTIME",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "UNIT",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "ISOCODE_UNIT",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "PLANGROUP",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "MNTPLAN",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "MNTCALL_NO",
+      "scope" : "request",
+      "dataType" : "number",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "MAINTITEM",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "CREATED_BY",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "CREATED_ON",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "CHANGED_BY",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "CHANGED_ON",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "DESSTDATE",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "DESSTTIME",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "DESENDDATE",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "DESENDTM",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "DESST_DATE_TIME",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "DESEN_DATE_TIME",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "MATERIAL",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "CUST_NO",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "OBJECT_NO",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "COMPTIME",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "LONG_TEXT",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "PRILANG",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "REFDATE",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "REFTIME",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "REF_DATE_TIME",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "SALES_ORD",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "PURCH_NO_C",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "PURCH_DATE",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "DIVISION",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "SALES_ORG",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "DISTR_CHAN",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "ADDR_NUMBER",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "CHANGED_AT",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "CREATED_AT",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "CAT_TYPE",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "PM_WKCTR",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "SERIALNO",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "DELETE_FLAG",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "DEVICEDATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "SALES_OFFICE",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "SALES_GRP",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "NOTIFTMEZ",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "ABCINDIC",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "SORTFIELD",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "MAINTPLANT",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "MAINTLOC",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "MAINTROOM",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "PLSECTN",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "PP_WKCTR",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "BUS_AREA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "CO_AREA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "COSTCENTER",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "WBS_ELEMENT",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "ASSET_NO",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "SUB_NUMBER",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "STDGORD",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "STLMTORDER",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "COMP_CODE",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "SALES_ORG_LOC",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "DIVISION_LOC",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "DIST_CHAN_LOC",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "ADDR_NO_LOC",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "DOC_NUMBER",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "ITM_NUMBER",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "SCENARIO",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "ASSEMBLY_EXT",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "ASSEMBLY_GUID",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "ASSEMBLY_VERSION",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "MATERIAL_EXT",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "MATERIAL_GUID",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "MATERIAL_VERSION",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "START_POINT",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "END_POINT",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "LINEAR_LENGTH",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "LINEAR_UNIT",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "MARKER_START",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "MARKER_DIST_STA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "MARKER_END",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "MARKER_DIST_END",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "MARKER_DIST_UNIT",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "LRPID",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "OFFSET1_TYPE",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "OFFSET1_VALUE",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "OFFSET1_UNIT",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "OFFSET2_TYPE",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "OFFSET2_VALUE",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "OFFSET2_UNIT",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "TEXT_LENGTH",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "LTEXT",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "EAM_ATTACH",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "ASSET_KEY",
+      "collectionId" : "EAM_ATTACH",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "ASSET_REF",
+      "collectionId" : "EAM_ATTACH",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "ASSET_TEXT",
+      "collectionId" : "EAM_ATTACH",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "ASSET_TYPE",
+      "collectionId" : "EAM_ATTACH",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "BINARY_NAME",
+      "collectionId" : "EAM_ATTACH",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "BINARY_NUM_GEN",
+      "collectionId" : "EAM_ATTACH",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "CHANGE_DATE",
+      "collectionId" : "EAM_ATTACH",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "CHANGE_TIME",
+      "collectionId" : "EAM_ATTACH",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "CHANGE_USER",
+      "collectionId" : "EAM_ATTACH",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "DELETE_IND",
+      "collectionId" : "EAM_ATTACH",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "DOC_NUM",
+      "collectionId" : "EAM_ATTACH",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "DOC_REF_NUM",
+      "collectionId" : "EAM_ATTACH",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "DOC_VERSION",
+      "collectionId" : "EAM_ATTACH",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "DW_DOKAR",
+      "collectionId" : "EAM_ATTACH",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "DW_DOKNR",
+      "collectionId" : "EAM_ATTACH",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "DW_DOKVR",
+      "collectionId" : "EAM_ATTACH",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "FILE_DESC",
+      "collectionId" : "EAM_ATTACH",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "FILE_EXT",
+      "collectionId" : "EAM_ATTACH",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "FILE_NAME",
+      "collectionId" : "EAM_ATTACH",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "INSTID",
+      "collectionId" : "EAM_ATTACH",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "INTERNAL_NUMBER",
+      "collectionId" : "EAM_ATTACH",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "SEQUENCE",
+      "collectionId" : "EAM_ATTACH",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "SOURCE_SYSTEM",
+      "collectionId" : "EAM_ATTACH",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "TIMESTAMP",
+      "collectionId" : "EAM_ATTACH",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "media",
+      "collectionId" : "EAM_ATTACH",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "name",
+      "collectionId" : "media",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "description",
+      "collectionId" : "media",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "classField",
+      "collectionId" : "media",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "classValue",
+      "collectionId" : "media",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "group",
+      "collectionId" : "media",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "type",
+      "collectionId" : "media",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "extension",
+      "collectionId" : "media",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "url",
+      "collectionId" : "media",
+      "scope" : "request",
+      "dataType" : "binary",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "ondemand",
+      "collectionId" : "media",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "EAM_NOTIFICATION_ADDRESS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "ADDRESS_ID",
+      "collectionId" : "EAM_NOTIFICATION_ADDRESS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "ADDR_TYPE",
+      "collectionId" : "EAM_NOTIFICATION_ADDRESS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "ADDR_TYPE_ID",
+      "collectionId" : "EAM_NOTIFICATION_ADDRESS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "CONT_SEQUENCE",
+      "collectionId" : "EAM_NOTIFICATION_ADDRESS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "COUNTER",
+      "collectionId" : "EAM_NOTIFICATION_ADDRESS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "DELETE_IND",
+      "collectionId" : "EAM_NOTIFICATION_ADDRESS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "DOC_NUM",
+      "collectionId" : "EAM_NOTIFICATION_ADDRESS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "OPMODE",
+      "collectionId" : "EAM_NOTIFICATION_ADDRESS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "PARTNER_TYPE",
+      "collectionId" : "EAM_NOTIFICATION_ADDRESS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "PRIM_SEC_FLAG",
+      "collectionId" : "EAM_NOTIFICATION_ADDRESS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "TIMESTAMP",
+      "collectionId" : "EAM_NOTIFICATION_ADDRESS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "EAM_ADDRESS",
+      "collectionId" : "EAM_NOTIFICATION_ADDRESS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "ADDRNO",
+      "collectionId" : "EAM_ADDRESS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "CITY",
+      "collectionId" : "EAM_ADDRESS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "COUNTER",
+      "collectionId" : "EAM_ADDRESS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "COUNTRY",
+      "collectionId" : "EAM_ADDRESS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "DELETE_IND",
+      "collectionId" : "EAM_ADDRESS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "EMAIL",
+      "collectionId" : "EAM_ADDRESS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "FAX",
+      "collectionId" : "EAM_ADDRESS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "FAX_EXTENSION",
+      "collectionId" : "EAM_ADDRESS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "HOUSE_NUM",
+      "collectionId" : "EAM_ADDRESS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "LATITUDE",
+      "collectionId" : "EAM_ADDRESS",
+      "scope" : "request",
+      "dataType" : "number",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "LONGITUDE",
+      "collectionId" : "EAM_ADDRESS",
+      "scope" : "request",
+      "dataType" : "number",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "MOBILE1",
+      "collectionId" : "EAM_ADDRESS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "MOBILE2",
+      "collectionId" : "EAM_ADDRESS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "NAME1",
+      "collectionId" : "EAM_ADDRESS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "NAME2",
+      "collectionId" : "EAM_ADDRESS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "OPMODE",
+      "collectionId" : "EAM_ADDRESS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "PHONE1",
+      "collectionId" : "EAM_ADDRESS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "PHONE2",
+      "collectionId" : "EAM_ADDRESS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "POST_CODE",
+      "collectionId" : "EAM_ADDRESS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "REGION",
+      "collectionId" : "EAM_ADDRESS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "STREET",
+      "collectionId" : "EAM_ADDRESS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "TEL_EXTENSION1",
+      "collectionId" : "EAM_ADDRESS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "TEL_EXTENSION2",
+      "collectionId" : "EAM_ADDRESS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "TIMESTAMP",
+      "collectionId" : "EAM_ADDRESS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "EAM_NOTIF_ASSET",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "ASSET_TYPE",
+      "collectionId" : "EAM_NOTIF_ASSET",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "DELETE_IND",
+      "collectionId" : "EAM_NOTIF_ASSET",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "EQUIP_ASSET_VAL",
+      "collectionId" : "EAM_NOTIF_ASSET",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "FLOCN_DESC",
+      "collectionId" : "EAM_NOTIF_ASSET",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "FUNC_LOCATION",
+      "collectionId" : "EAM_NOTIF_ASSET",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "MAINTAIN_PLANT",
+      "collectionId" : "EAM_NOTIF_ASSET",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "NOTIF_NUM",
+      "collectionId" : "EAM_NOTIF_ASSET",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "TECH_OBJ_DESC",
+      "collectionId" : "EAM_NOTIF_ASSET",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "TIMESTAMP",
+      "collectionId" : "EAM_NOTIF_ASSET",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "EAM_ASSET_EQUIP",
+      "collectionId" : "EAM_NOTIF_ASSET",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "ABC_INDICATOR",
+      "collectionId" : "EAM_ASSET_EQUIP",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "ACQDATE",
+      "collectionId" : "EAM_ASSET_EQUIP",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "ACQUISVAL",
+      "collectionId" : "EAM_ASSET_EQUIP",
+      "scope" : "request",
+      "dataType" : "number",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "ASSET",
+      "collectionId" : "EAM_ASSET_EQUIP",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "ASSET_NO",
+      "collectionId" : "EAM_ASSET_EQUIP",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "ASSET_TYPE",
+      "collectionId" : "EAM_ASSET_EQUIP",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "AUTHGRP",
+      "collectionId" : "EAM_ASSET_EQUIP",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "BUSINESS_AREA",
+      "collectionId" : "EAM_ASSET_EQUIP",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "CATALOG_PROFILE",
+      "collectionId" : "EAM_ASSET_EQUIP",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "CLASS_NUMBER",
+      "collectionId" : "EAM_ASSET_EQUIP",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "CLASS_TYPE",
+      "collectionId" : "EAM_ASSET_EQUIP",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "COMP_CODE",
+      "collectionId" : "EAM_ASSET_EQUIP",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "CONFIGURATION",
+      "collectionId" : "EAM_ASSET_EQUIP",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "CONSTMONTH",
+      "collectionId" : "EAM_ASSET_EQUIP",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "CONSTTYPE",
+      "collectionId" : "EAM_ASSET_EQUIP",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "CONSTYEAR",
+      "collectionId" : "EAM_ASSET_EQUIP",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "COSTCENTER",
+      "collectionId" : "EAM_ASSET_EQUIP",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "COUNTR_ISO",
+      "collectionId" : "EAM_ASSET_EQUIP",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "CURRENCY",
+      "collectionId" : "EAM_ASSET_EQUIP",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "CURR_ISO",
+      "collectionId" : "EAM_ASSET_EQUIP",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "DELETE_IND",
+      "collectionId" : "EAM_ASSET_EQUIP",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "DISTR_CHAN",
+      "collectionId" : "EAM_ASSET_EQUIP",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "DIVISION",
+      "collectionId" : "EAM_ASSET_EQUIP",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "END_POINT",
+      "collectionId" : "EAM_ASSET_EQUIP",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "EQUIP_CATEGORY",
+      "collectionId" : "EAM_ASSET_EQUIP",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "FLOCN_CATEGORY",
+      "collectionId" : "EAM_ASSET_EQUIP",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "FLOCN_DESC",
+      "collectionId" : "EAM_ASSET_EQUIP",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "INVENTORY_NUM",
+      "collectionId" : "EAM_ASSET_EQUIP",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "LINEAR_LENGTH",
+      "collectionId" : "EAM_ASSET_EQUIP",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "LINEAR_UNIT",
+      "collectionId" : "EAM_ASSET_EQUIP",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "LOC_MAINTAIN_OBJ",
+      "collectionId" : "EAM_ASSET_EQUIP",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "LRPID",
+      "collectionId" : "EAM_ASSET_EQUIP",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "MAINTAIN_PLANT",
+      "collectionId" : "EAM_ASSET_EQUIP",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "MAINTROOM",
+      "collectionId" : "EAM_ASSET_EQUIP",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "MANCOUNTRY",
+      "collectionId" : "EAM_ASSET_EQUIP",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "MANPARNO",
+      "collectionId" : "EAM_ASSET_EQUIP",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "MANUF_ASSET",
+      "collectionId" : "EAM_ASSET_EQUIP",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "MANUF_MODELNO",
+      "collectionId" : "EAM_ASSET_EQUIP",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "MANUF_SERIALNO",
+      "collectionId" : "EAM_ASSET_EQUIP",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "MARKER_DIST_END",
+      "collectionId" : "EAM_ASSET_EQUIP",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "MARKER_DIST_STA",
+      "collectionId" : "EAM_ASSET_EQUIP",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "MARKER_DIST_UNIT",
+      "collectionId" : "EAM_ASSET_EQUIP",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "MARKER_END",
+      "collectionId" : "EAM_ASSET_EQUIP",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "MARKER_START",
+      "collectionId" : "EAM_ASSET_EQUIP",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "MATERIAL_NUM",
+      "collectionId" : "EAM_ASSET_EQUIP",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "OBJECT_NUMBER",
+      "collectionId" : "EAM_ASSET_EQUIP",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "OBJ_WEIGHT",
+      "collectionId" : "EAM_ASSET_EQUIP",
+      "scope" : "request",
+      "dataType" : "number",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "OFFSET1_TYPE",
+      "collectionId" : "EAM_ASSET_EQUIP",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "OFFSET1_UNIT",
+      "collectionId" : "EAM_ASSET_EQUIP",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "OFFSET1_VALUE",
+      "collectionId" : "EAM_ASSET_EQUIP",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "OFFSET2_TYPE",
+      "collectionId" : "EAM_ASSET_EQUIP",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "OFFSET2_UNIT",
+      "collectionId" : "EAM_ASSET_EQUIP",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "OFFSET2_VALUE",
+      "collectionId" : "EAM_ASSET_EQUIP",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "OPMODE",
+      "collectionId" : "EAM_ASSET_EQUIP",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "PLANGROUP",
+      "collectionId" : "EAM_ASSET_EQUIP",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "PLANPLANT",
+      "collectionId" : "EAM_ASSET_EQUIP",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "PLSECTN",
+      "collectionId" : "EAM_ASSET_EQUIP",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "PP_WKCTR",
+      "collectionId" : "EAM_ASSET_EQUIP",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "READ_ADRNR",
+      "collectionId" : "EAM_ASSET_EQUIP",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "READ_CHDAT",
+      "collectionId" : "EAM_ASSET_EQUIP",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "READ_CHNAM",
+      "collectionId" : "EAM_ASSET_EQUIP",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "READ_CRDAT",
+      "collectionId" : "EAM_ASSET_EQUIP",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "READ_CRNAM",
+      "collectionId" : "EAM_ASSET_EQUIP",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "SALES_GRP",
+      "collectionId" : "EAM_ASSET_EQUIP",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "SALES_OFF",
+      "collectionId" : "EAM_ASSET_EQUIP",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "SALES_ORG",
+      "collectionId" : "EAM_ASSET_EQUIP",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "SETTLORDER",
+      "collectionId" : "EAM_ASSET_EQUIP",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "SIZE_DIM",
+      "collectionId" : "EAM_ASSET_EQUIP",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "SORT_FIELD",
+      "collectionId" : "EAM_ASSET_EQUIP",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "SOURCE_SYSTEM",
+      "collectionId" : "EAM_ASSET_EQUIP",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "STANDORDER",
+      "collectionId" : "EAM_ASSET_EQUIP",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "START_FROM",
+      "collectionId" : "EAM_ASSET_EQUIP",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "START_POINT",
+      "collectionId" : "EAM_ASSET_EQUIP",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "STATUS_PROFILE",
+      "collectionId" : "EAM_ASSET_EQUIP",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "SUB_NUMBER",
+      "collectionId" : "EAM_ASSET_EQUIP",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "SYS_STATUS",
+      "collectionId" : "EAM_ASSET_EQUIP",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "TECH_OBJ_DESC",
+      "collectionId" : "EAM_ASSET_EQUIP",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "TIMESTAMP",
+      "collectionId" : "EAM_ASSET_EQUIP",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "TYPE_TECH_OBJECT",
+      "collectionId" : "EAM_ASSET_EQUIP",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "UNIT_ISO",
+      "collectionId" : "EAM_ASSET_EQUIP",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "UNIT_OF_WT",
+      "collectionId" : "EAM_ASSET_EQUIP",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "UPLOAD_ASSET_KEY",
+      "collectionId" : "EAM_ASSET_EQUIP",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "USER_STATUS",
+      "collectionId" : "EAM_ASSET_EQUIP",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "WBS_ELEM",
+      "collectionId" : "EAM_ASSET_EQUIP",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "WORK_CENTER",
+      "collectionId" : "EAM_ASSET_EQUIP",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "WORK_CTR",
+      "collectionId" : "EAM_ASSET_EQUIP",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "EAM_ASSET_FLOC",
+      "collectionId" : "EAM_NOTIF_ASSET",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "ABC_INDICATOR",
+      "collectionId" : "EAM_ASSET_FLOC",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "ACQDATE",
+      "collectionId" : "EAM_ASSET_FLOC",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "ACQUISVAL",
+      "collectionId" : "EAM_ASSET_FLOC",
+      "scope" : "request",
+      "dataType" : "number",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "ASSET",
+      "collectionId" : "EAM_ASSET_FLOC",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "ASSET_NO",
+      "collectionId" : "EAM_ASSET_FLOC",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "ASSET_TYPE",
+      "collectionId" : "EAM_ASSET_FLOC",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "AUTHGRP",
+      "collectionId" : "EAM_ASSET_FLOC",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "BUSINESS_AREA",
+      "collectionId" : "EAM_ASSET_FLOC",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "CATALOG_PROFILE",
+      "collectionId" : "EAM_ASSET_FLOC",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "CLASS_NUMBER",
+      "collectionId" : "EAM_ASSET_FLOC",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "CLASS_TYPE",
+      "collectionId" : "EAM_ASSET_FLOC",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "COMP_CODE",
+      "collectionId" : "EAM_ASSET_FLOC",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "CONFIGURATION",
+      "collectionId" : "EAM_ASSET_FLOC",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "CONSTMONTH",
+      "collectionId" : "EAM_ASSET_FLOC",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "CONSTTYPE",
+      "collectionId" : "EAM_ASSET_FLOC",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "CONSTYEAR",
+      "collectionId" : "EAM_ASSET_FLOC",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "COSTCENTER",
+      "collectionId" : "EAM_ASSET_FLOC",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "COUNTR_ISO",
+      "collectionId" : "EAM_ASSET_FLOC",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "CURRENCY",
+      "collectionId" : "EAM_ASSET_FLOC",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "CURR_ISO",
+      "collectionId" : "EAM_ASSET_FLOC",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "DELETE_IND",
+      "collectionId" : "EAM_ASSET_FLOC",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "DISTR_CHAN",
+      "collectionId" : "EAM_ASSET_FLOC",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "DIVISION",
+      "collectionId" : "EAM_ASSET_FLOC",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "END_POINT",
+      "collectionId" : "EAM_ASSET_FLOC",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "EQUIP_CATEGORY",
+      "collectionId" : "EAM_ASSET_FLOC",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "FLOCN_CATEGORY",
+      "collectionId" : "EAM_ASSET_FLOC",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "FLOCN_DESC",
+      "collectionId" : "EAM_ASSET_FLOC",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "INVENTORY_NUM",
+      "collectionId" : "EAM_ASSET_FLOC",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "LINEAR_LENGTH",
+      "collectionId" : "EAM_ASSET_FLOC",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "LINEAR_UNIT",
+      "collectionId" : "EAM_ASSET_FLOC",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "LOC_MAINTAIN_OBJ",
+      "collectionId" : "EAM_ASSET_FLOC",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "LRPID",
+      "collectionId" : "EAM_ASSET_FLOC",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "MAINTAIN_PLANT",
+      "collectionId" : "EAM_ASSET_FLOC",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "MAINTROOM",
+      "collectionId" : "EAM_ASSET_FLOC",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "MANCOUNTRY",
+      "collectionId" : "EAM_ASSET_FLOC",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "MANPARNO",
+      "collectionId" : "EAM_ASSET_FLOC",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "MANUF_ASSET",
+      "collectionId" : "EAM_ASSET_FLOC",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "MANUF_MODELNO",
+      "collectionId" : "EAM_ASSET_FLOC",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "MANUF_SERIALNO",
+      "collectionId" : "EAM_ASSET_FLOC",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "MARKER_DIST_END",
+      "collectionId" : "EAM_ASSET_FLOC",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "MARKER_DIST_STA",
+      "collectionId" : "EAM_ASSET_FLOC",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "MARKER_DIST_UNIT",
+      "collectionId" : "EAM_ASSET_FLOC",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "MARKER_END",
+      "collectionId" : "EAM_ASSET_FLOC",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "MARKER_START",
+      "collectionId" : "EAM_ASSET_FLOC",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "MATERIAL_NUM",
+      "collectionId" : "EAM_ASSET_FLOC",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "OBJECT_NUMBER",
+      "collectionId" : "EAM_ASSET_FLOC",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "OBJ_WEIGHT",
+      "collectionId" : "EAM_ASSET_FLOC",
+      "scope" : "request",
+      "dataType" : "number",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "OFFSET1_TYPE",
+      "collectionId" : "EAM_ASSET_FLOC",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "OFFSET1_UNIT",
+      "collectionId" : "EAM_ASSET_FLOC",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "OFFSET1_VALUE",
+      "collectionId" : "EAM_ASSET_FLOC",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "OFFSET2_TYPE",
+      "collectionId" : "EAM_ASSET_FLOC",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "OFFSET2_UNIT",
+      "collectionId" : "EAM_ASSET_FLOC",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "OFFSET2_VALUE",
+      "collectionId" : "EAM_ASSET_FLOC",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "OPMODE",
+      "collectionId" : "EAM_ASSET_FLOC",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "PLANGROUP",
+      "collectionId" : "EAM_ASSET_FLOC",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "PLANPLANT",
+      "collectionId" : "EAM_ASSET_FLOC",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "PLSECTN",
+      "collectionId" : "EAM_ASSET_FLOC",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "PP_WKCTR",
+      "collectionId" : "EAM_ASSET_FLOC",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "READ_ADRNR",
+      "collectionId" : "EAM_ASSET_FLOC",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "READ_CHDAT",
+      "collectionId" : "EAM_ASSET_FLOC",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "READ_CHNAM",
+      "collectionId" : "EAM_ASSET_FLOC",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "READ_CRDAT",
+      "collectionId" : "EAM_ASSET_FLOC",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "READ_CRNAM",
+      "collectionId" : "EAM_ASSET_FLOC",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "SALES_GRP",
+      "collectionId" : "EAM_ASSET_FLOC",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "SALES_OFF",
+      "collectionId" : "EAM_ASSET_FLOC",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "SALES_ORG",
+      "collectionId" : "EAM_ASSET_FLOC",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "SETTLORDER",
+      "collectionId" : "EAM_ASSET_FLOC",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "SIZE_DIM",
+      "collectionId" : "EAM_ASSET_FLOC",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "SORT_FIELD",
+      "collectionId" : "EAM_ASSET_FLOC",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "SOURCE_SYSTEM",
+      "collectionId" : "EAM_ASSET_FLOC",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "STANDORDER",
+      "collectionId" : "EAM_ASSET_FLOC",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "START_FROM",
+      "collectionId" : "EAM_ASSET_FLOC",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "START_POINT",
+      "collectionId" : "EAM_ASSET_FLOC",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "STATUS_PROFILE",
+      "collectionId" : "EAM_ASSET_FLOC",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "SUB_NUMBER",
+      "collectionId" : "EAM_ASSET_FLOC",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "SYS_STATUS",
+      "collectionId" : "EAM_ASSET_FLOC",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "TECH_OBJ_DESC",
+      "collectionId" : "EAM_ASSET_FLOC",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "TIMESTAMP",
+      "collectionId" : "EAM_ASSET_FLOC",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "TYPE_TECH_OBJECT",
+      "collectionId" : "EAM_ASSET_FLOC",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "UNIT_ISO",
+      "collectionId" : "EAM_ASSET_FLOC",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "UNIT_OF_WT",
+      "collectionId" : "EAM_ASSET_FLOC",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "UPLOAD_ASSET_KEY",
+      "collectionId" : "EAM_ASSET_FLOC",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "USER_STATUS",
+      "collectionId" : "EAM_ASSET_FLOC",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "WBS_ELEM",
+      "collectionId" : "EAM_ASSET_FLOC",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "WORK_CENTER",
+      "collectionId" : "EAM_ASSET_FLOC",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "WORK_CTR",
+      "collectionId" : "EAM_ASSET_FLOC",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "EAM_NOTIF_STATUS_HIST",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "CHANGE_TIMESTAMP",
+      "collectionId" : "EAM_NOTIF_STATUS_HIST",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "COMMENTS",
+      "collectionId" : "EAM_NOTIF_STATUS_HIST",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "CREATED_BY",
+      "collectionId" : "EAM_NOTIF_STATUS_HIST",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "CREATED_TSTAMP",
+      "collectionId" : "EAM_NOTIF_STATUS_HIST",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "DELETE_IND",
+      "collectionId" : "EAM_NOTIF_STATUS_HIST",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "NOTIF_NUM",
+      "collectionId" : "EAM_NOTIF_STATUS_HIST",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "OPMODE",
+      "collectionId" : "EAM_NOTIF_STATUS_HIST",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "TIMESTAMP",
+      "collectionId" : "EAM_NOTIF_STATUS_HIST",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "TIME_ZONE",
+      "collectionId" : "EAM_NOTIF_STATUS_HIST",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "USERID",
+      "collectionId" : "EAM_NOTIF_STATUS_HIST",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "USER_STATUS",
+      "collectionId" : "EAM_NOTIF_STATUS_HIST",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "WORK_CENTER",
+      "collectionId" : "EAM_NOTIF_STATUS_HIST",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "EAM_NOTIF_USER",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "DELETE_IND",
+      "collectionId" : "EAM_NOTIF_USER",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "DIST_CH",
+      "collectionId" : "EAM_NOTIF_USER",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "DIVISION",
+      "collectionId" : "EAM_NOTIF_USER",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "EMAIL",
+      "collectionId" : "EAM_NOTIF_USER",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "FIRST_NAME",
+      "collectionId" : "EAM_NOTIF_USER",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "LAST_NAME",
+      "collectionId" : "EAM_NOTIF_USER",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "LOC_MAINTAIN_OBJ",
+      "collectionId" : "EAM_NOTIF_USER",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "LONG_NAME",
+      "collectionId" : "EAM_NOTIF_USER",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "MOBILE",
+      "collectionId" : "EAM_NOTIF_USER",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "PARAMETER1",
+      "collectionId" : "EAM_NOTIF_USER",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "PARAMETER2",
+      "collectionId" : "EAM_NOTIF_USER",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "PARAMETER3",
+      "collectionId" : "EAM_NOTIF_USER",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "PARAMETER4",
+      "collectionId" : "EAM_NOTIF_USER",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "PARAMETER5",
+      "collectionId" : "EAM_NOTIF_USER",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "PARAMETER6",
+      "collectionId" : "EAM_NOTIF_USER",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "PARAMETER7",
+      "collectionId" : "EAM_NOTIF_USER",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "PARAMETER8",
+      "collectionId" : "EAM_NOTIF_USER",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "PHONE",
+      "collectionId" : "EAM_NOTIF_USER",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "PLANT",
+      "collectionId" : "EAM_NOTIF_USER",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "SALES_ORG",
+      "collectionId" : "EAM_NOTIF_USER",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "STORAGE_LOCATION",
+      "collectionId" : "EAM_NOTIF_USER",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "TENANT",
+      "collectionId" : "EAM_NOTIF_USER",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "TIMESTAMP",
+      "collectionId" : "EAM_NOTIF_USER",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "TIMEZONE_ID",
+      "collectionId" : "EAM_NOTIF_USER",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "USERID",
+      "collectionId" : "EAM_NOTIF_USER",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "WORK_CENTER",
+      "collectionId" : "EAM_NOTIF_USER",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    } ],
+    "outputs" : [ {
+      "id" : "EAM_NOTIF",
+      "scope" : "response",
+      "dataType" : "string",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "NOTIF_NUM",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "NOTIF_TYPE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "SHORT_TEXT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "NOTIF_DATE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "NOTIF_TIME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "NOTIF_DATE_TIME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "FUNC_LOCATION",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "FLOCN_DESC",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "EQUIP_NUM",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "TECH_OBJ_DESC",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "NOTF_REP_PER_NAM",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "CATALOG_PROFILE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "CODE_GRP_PART",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "PART_OBJECT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "CODE_GRP_PROBLEM",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "PROBLEM",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "PROBLEM_TEXT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "CODE_GRP_CAUSE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "CAUSE_CODE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "PRIORITY_TYPE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "PRIORITY",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "ORDER_NUM",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "ORDER_TYPE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "ORDER_TEXT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "INTERNAL_NUMBER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "REJECTED",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "OPMODE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "SERVER_GROUP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "SERVER_ID",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "CODE_GRP_CODING",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "CODING_CODE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "CONVERT_TO_WO",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "MASTER_WRRNTY_NO",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "WRRNTY_START_DT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "WRRNTY_END_DT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "MANU_WRRNTY_STDT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "MANU_WRRNTY_ENDT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "WORK_CENTER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "WC_SHORT_DESC",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "SYS_STATUS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "USERID",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "USER_ST",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "USER_STATUS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "USERSTATUS_TXT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "STAT_PROF",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "TIME_ZONE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "ACCEPTED",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "PLANPLANT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "LOC_ACC",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "ASSEMBLY",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "BREAKDOWN",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "STRMLFNDATE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "ENDMLFNDATE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "STRMLFNTIME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "ENDMLFNTIME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "STRML_DATE_TIME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "ENDML_DATE_TIME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "DOWNTIME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "UNIT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "ISOCODE_UNIT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "PLANGROUP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "MNTPLAN",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "MNTCALL_NO",
+      "scope" : "response",
+      "dataType" : "number",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "MAINTITEM",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "CREATED_BY",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "CREATED_ON",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "CHANGED_BY",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "CHANGED_ON",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "DESSTDATE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "DESSTTIME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "DESENDDATE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "DESENDTM",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "DESST_DATE_TIME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "DESEN_DATE_TIME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "MATERIAL",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "CUST_NO",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "OBJECT_NO",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "COMPTIME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "LONG_TEXT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "PRILANG",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "REFDATE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "REFTIME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "REF_DATE_TIME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "SALES_ORD",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "PURCH_NO_C",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "PURCH_DATE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "DIVISION",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "SALES_ORG",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "DISTR_CHAN",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "ADDR_NUMBER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "CHANGED_AT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "CREATED_AT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "CAT_TYPE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "PM_WKCTR",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "SERIALNO",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "DELETE_FLAG",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "DEVICEDATA",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "SALES_OFFICE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "SALES_GRP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "NOTIFTMEZ",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "ABCINDIC",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "SORTFIELD",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "MAINTPLANT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "MAINTLOC",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "MAINTROOM",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "PLSECTN",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "PP_WKCTR",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "BUS_AREA",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "CO_AREA",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "COSTCENTER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "WBS_ELEMENT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "ASSET_NO",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "SUB_NUMBER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "STDGORD",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "STLMTORDER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "COMP_CODE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "SALES_ORG_LOC",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "DIVISION_LOC",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "DIST_CHAN_LOC",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "ADDR_NO_LOC",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "DOC_NUMBER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "ITM_NUMBER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "SCENARIO",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "ASSEMBLY_EXT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "ASSEMBLY_GUID",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "ASSEMBLY_VERSION",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "MATERIAL_EXT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "MATERIAL_GUID",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "MATERIAL_VERSION",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "START_POINT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "END_POINT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "LINEAR_LENGTH",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "LINEAR_UNIT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "MARKER_START",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "MARKER_DIST_STA",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "MARKER_END",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "MARKER_DIST_END",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "MARKER_DIST_UNIT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "LRPID",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "OFFSET1_TYPE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "OFFSET1_VALUE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "OFFSET1_UNIT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "OFFSET2_TYPE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "OFFSET2_VALUE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "OFFSET2_UNIT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "TEXT_LENGTH",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "LTEXT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "EAM_ATTACH",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "ASSET_KEY",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ATTACH",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "ASSET_REF",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ATTACH",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "ASSET_TEXT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ATTACH",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "ASSET_TYPE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ATTACH",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "BINARY_NAME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ATTACH",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "BINARY_NUM_GEN",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ATTACH",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "CHANGE_DATE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ATTACH",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "CHANGE_TIME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ATTACH",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "CHANGE_USER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ATTACH",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ATTACH",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "DOC_NUM",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ATTACH",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "DOC_REF_NUM",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ATTACH",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "DOC_VERSION",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ATTACH",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "DW_DOKAR",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ATTACH",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "DW_DOKNR",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ATTACH",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "DW_DOKVR",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ATTACH",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "FILE_DESC",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ATTACH",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "FILE_EXT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ATTACH",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "FILE_NAME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ATTACH",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "INSTID",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ATTACH",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "INTERNAL_NUMBER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ATTACH",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "SEQUENCE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ATTACH",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "SOURCE_SYSTEM",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ATTACH",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ATTACH",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "media",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ATTACH",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "name",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "media",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "description",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "media",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "classField",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "media",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "classValue",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "media",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "group",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "media",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "type",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "media",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "extension",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "media",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "url",
+      "scope" : "response",
+      "dataType" : "binary",
+      "collectionID" : "media",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "ondemand",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "media",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "EAM_NOTIFICATION_ADDRESS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "ADDRESS_ID",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIFICATION_ADDRESS",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "ADDR_TYPE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIFICATION_ADDRESS",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "ADDR_TYPE_ID",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIFICATION_ADDRESS",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "CONT_SEQUENCE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIFICATION_ADDRESS",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "COUNTER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIFICATION_ADDRESS",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIFICATION_ADDRESS",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "DOC_NUM",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIFICATION_ADDRESS",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "OPMODE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIFICATION_ADDRESS",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "PARTNER_TYPE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIFICATION_ADDRESS",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "PRIM_SEC_FLAG",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIFICATION_ADDRESS",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIFICATION_ADDRESS",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "EAM_ADDRESS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIFICATION_ADDRESS",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "ADDRNO",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ADDRESS",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "CITY",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ADDRESS",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "COUNTER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ADDRESS",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "COUNTRY",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ADDRESS",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ADDRESS",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "EMAIL",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ADDRESS",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "FAX",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ADDRESS",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "FAX_EXTENSION",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ADDRESS",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "HOUSE_NUM",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ADDRESS",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "LATITUDE",
+      "scope" : "response",
+      "dataType" : "number",
+      "collectionID" : "EAM_ADDRESS",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "LONGITUDE",
+      "scope" : "response",
+      "dataType" : "number",
+      "collectionID" : "EAM_ADDRESS",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "MOBILE1",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ADDRESS",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "MOBILE2",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ADDRESS",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "NAME1",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ADDRESS",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "NAME2",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ADDRESS",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "OPMODE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ADDRESS",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "PHONE1",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ADDRESS",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "PHONE2",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ADDRESS",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "POST_CODE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ADDRESS",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "REGION",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ADDRESS",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "STREET",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ADDRESS",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "TEL_EXTENSION1",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ADDRESS",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "TEL_EXTENSION2",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ADDRESS",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ADDRESS",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "EAM_NOTIF_ASSET",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "ASSET_TYPE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF_ASSET",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF_ASSET",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "EQUIP_ASSET_VAL",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF_ASSET",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "FLOCN_DESC",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF_ASSET",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "FUNC_LOCATION",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF_ASSET",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "MAINTAIN_PLANT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF_ASSET",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "NOTIF_NUM",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF_ASSET",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "TECH_OBJ_DESC",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF_ASSET",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF_ASSET",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "EAM_ASSET_EQUIP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF_ASSET",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "ABC_INDICATOR",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_EQUIP",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "ACQDATE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_EQUIP",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "ACQUISVAL",
+      "scope" : "response",
+      "dataType" : "number",
+      "collectionID" : "EAM_ASSET_EQUIP",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "ASSET",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_EQUIP",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "ASSET_NO",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_EQUIP",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "ASSET_TYPE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_EQUIP",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "AUTHGRP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_EQUIP",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "BUSINESS_AREA",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_EQUIP",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "CATALOG_PROFILE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_EQUIP",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "CLASS_NUMBER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_EQUIP",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "CLASS_TYPE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_EQUIP",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "COMP_CODE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_EQUIP",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "CONFIGURATION",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_EQUIP",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "CONSTMONTH",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_EQUIP",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "CONSTTYPE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_EQUIP",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "CONSTYEAR",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_EQUIP",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "COSTCENTER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_EQUIP",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "COUNTR_ISO",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_EQUIP",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "CURRENCY",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_EQUIP",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "CURR_ISO",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_EQUIP",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_EQUIP",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "DISTR_CHAN",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_EQUIP",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "DIVISION",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_EQUIP",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "END_POINT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_EQUIP",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "EQUIP_CATEGORY",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_EQUIP",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "FLOCN_CATEGORY",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_EQUIP",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "FLOCN_DESC",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_EQUIP",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "INVENTORY_NUM",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_EQUIP",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "LINEAR_LENGTH",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_EQUIP",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "LINEAR_UNIT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_EQUIP",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "LOC_MAINTAIN_OBJ",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_EQUIP",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "LRPID",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_EQUIP",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "MAINTAIN_PLANT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_EQUIP",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "MAINTROOM",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_EQUIP",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "MANCOUNTRY",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_EQUIP",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "MANPARNO",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_EQUIP",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "MANUF_ASSET",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_EQUIP",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "MANUF_MODELNO",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_EQUIP",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "MANUF_SERIALNO",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_EQUIP",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "MARKER_DIST_END",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_EQUIP",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "MARKER_DIST_STA",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_EQUIP",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "MARKER_DIST_UNIT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_EQUIP",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "MARKER_END",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_EQUIP",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "MARKER_START",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_EQUIP",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "MATERIAL_NUM",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_EQUIP",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "OBJECT_NUMBER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_EQUIP",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "OBJ_WEIGHT",
+      "scope" : "response",
+      "dataType" : "number",
+      "collectionID" : "EAM_ASSET_EQUIP",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "OFFSET1_TYPE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_EQUIP",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "OFFSET1_UNIT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_EQUIP",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "OFFSET1_VALUE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_EQUIP",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "OFFSET2_TYPE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_EQUIP",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "OFFSET2_UNIT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_EQUIP",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "OFFSET2_VALUE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_EQUIP",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "OPMODE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_EQUIP",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "PLANGROUP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_EQUIP",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "PLANPLANT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_EQUIP",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "PLSECTN",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_EQUIP",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "PP_WKCTR",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_EQUIP",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "READ_ADRNR",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_EQUIP",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "READ_CHDAT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_EQUIP",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "READ_CHNAM",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_EQUIP",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "READ_CRDAT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_EQUIP",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "READ_CRNAM",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_EQUIP",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "SALES_GRP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_EQUIP",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "SALES_OFF",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_EQUIP",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "SALES_ORG",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_EQUIP",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "SETTLORDER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_EQUIP",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "SIZE_DIM",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_EQUIP",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "SORT_FIELD",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_EQUIP",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "SOURCE_SYSTEM",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_EQUIP",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "STANDORDER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_EQUIP",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "START_FROM",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_EQUIP",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "START_POINT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_EQUIP",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "STATUS_PROFILE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_EQUIP",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "SUB_NUMBER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_EQUIP",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "SYS_STATUS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_EQUIP",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "TECH_OBJ_DESC",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_EQUIP",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_EQUIP",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "TYPE_TECH_OBJECT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_EQUIP",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "UNIT_ISO",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_EQUIP",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "UNIT_OF_WT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_EQUIP",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "UPLOAD_ASSET_KEY",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_EQUIP",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "USER_STATUS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_EQUIP",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "WBS_ELEM",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_EQUIP",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "WORK_CENTER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_EQUIP",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "WORK_CTR",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_EQUIP",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "EAM_ASSET_FLOC",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF_ASSET",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "ABC_INDICATOR",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_FLOC",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "ACQDATE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_FLOC",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "ACQUISVAL",
+      "scope" : "response",
+      "dataType" : "number",
+      "collectionID" : "EAM_ASSET_FLOC",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "ASSET",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_FLOC",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "ASSET_NO",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_FLOC",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "ASSET_TYPE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_FLOC",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "AUTHGRP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_FLOC",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "BUSINESS_AREA",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_FLOC",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "CATALOG_PROFILE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_FLOC",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "CLASS_NUMBER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_FLOC",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "CLASS_TYPE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_FLOC",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "COMP_CODE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_FLOC",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "CONFIGURATION",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_FLOC",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "CONSTMONTH",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_FLOC",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "CONSTTYPE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_FLOC",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "CONSTYEAR",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_FLOC",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "COSTCENTER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_FLOC",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "COUNTR_ISO",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_FLOC",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "CURRENCY",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_FLOC",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "CURR_ISO",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_FLOC",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_FLOC",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "DISTR_CHAN",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_FLOC",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "DIVISION",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_FLOC",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "END_POINT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_FLOC",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "EQUIP_CATEGORY",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_FLOC",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "FLOCN_CATEGORY",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_FLOC",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "FLOCN_DESC",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_FLOC",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "INVENTORY_NUM",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_FLOC",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "LINEAR_LENGTH",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_FLOC",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "LINEAR_UNIT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_FLOC",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "LOC_MAINTAIN_OBJ",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_FLOC",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "LRPID",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_FLOC",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "MAINTAIN_PLANT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_FLOC",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "MAINTROOM",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_FLOC",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "MANCOUNTRY",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_FLOC",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "MANPARNO",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_FLOC",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "MANUF_ASSET",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_FLOC",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "MANUF_MODELNO",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_FLOC",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "MANUF_SERIALNO",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_FLOC",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "MARKER_DIST_END",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_FLOC",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "MARKER_DIST_STA",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_FLOC",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "MARKER_DIST_UNIT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_FLOC",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "MARKER_END",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_FLOC",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "MARKER_START",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_FLOC",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "MATERIAL_NUM",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_FLOC",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "OBJECT_NUMBER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_FLOC",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "OBJ_WEIGHT",
+      "scope" : "response",
+      "dataType" : "number",
+      "collectionID" : "EAM_ASSET_FLOC",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "OFFSET1_TYPE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_FLOC",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "OFFSET1_UNIT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_FLOC",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "OFFSET1_VALUE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_FLOC",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "OFFSET2_TYPE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_FLOC",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "OFFSET2_UNIT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_FLOC",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "OFFSET2_VALUE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_FLOC",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "OPMODE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_FLOC",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "PLANGROUP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_FLOC",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "PLANPLANT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_FLOC",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "PLSECTN",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_FLOC",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "PP_WKCTR",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_FLOC",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "READ_ADRNR",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_FLOC",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "READ_CHDAT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_FLOC",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "READ_CHNAM",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_FLOC",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "READ_CRDAT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_FLOC",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "READ_CRNAM",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_FLOC",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "SALES_GRP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_FLOC",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "SALES_OFF",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_FLOC",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "SALES_ORG",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_FLOC",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "SETTLORDER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_FLOC",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "SIZE_DIM",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_FLOC",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "SORT_FIELD",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_FLOC",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "SOURCE_SYSTEM",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_FLOC",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "STANDORDER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_FLOC",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "START_FROM",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_FLOC",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "START_POINT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_FLOC",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "STATUS_PROFILE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_FLOC",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "SUB_NUMBER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_FLOC",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "SYS_STATUS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_FLOC",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "TECH_OBJ_DESC",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_FLOC",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_FLOC",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "TYPE_TECH_OBJECT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_FLOC",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "UNIT_ISO",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_FLOC",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "UNIT_OF_WT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_FLOC",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "UPLOAD_ASSET_KEY",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_FLOC",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "USER_STATUS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_FLOC",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "WBS_ELEM",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_FLOC",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "WORK_CENTER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_FLOC",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "WORK_CTR",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ASSET_FLOC",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "EAM_NOTIF_STATUS_HIST",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "CHANGE_TIMESTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF_STATUS_HIST",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "COMMENTS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF_STATUS_HIST",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "CREATED_BY",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF_STATUS_HIST",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "CREATED_TSTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF_STATUS_HIST",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF_STATUS_HIST",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "NOTIF_NUM",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF_STATUS_HIST",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "OPMODE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF_STATUS_HIST",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF_STATUS_HIST",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "TIME_ZONE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF_STATUS_HIST",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "USERID",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF_STATUS_HIST",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "USER_STATUS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF_STATUS_HIST",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "WORK_CENTER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF_STATUS_HIST",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "EAM_NOTIF_USER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF_USER",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "DIST_CH",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF_USER",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "DIVISION",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF_USER",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "EMAIL",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF_USER",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "FIRST_NAME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF_USER",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "LAST_NAME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF_USER",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "LOC_MAINTAIN_OBJ",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF_USER",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "LONG_NAME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF_USER",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "MOBILE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF_USER",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "PARAMETER1",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF_USER",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "PARAMETER2",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF_USER",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "PARAMETER3",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF_USER",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "PARAMETER4",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF_USER",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "PARAMETER5",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF_USER",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "PARAMETER6",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF_USER",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "PARAMETER7",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF_USER",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "PARAMETER8",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF_USER",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "PHONE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF_USER",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "PLANT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF_USER",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "SALES_ORG",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF_USER",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "STORAGE_LOCATION",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF_USER",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "TENANT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF_USER",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF_USER",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "TIMEZONE_ID",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF_USER",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "USERID",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF_USER",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "WORK_CENTER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_NOTIF_USER",
+      "formatType" : "None",
+      "isExtended" : false
+    } ],
+    "headers" : [ {
+      "id" : "KonySAP-Session-Key",
+      "scope" : "request"
+    } ],
+    "applyCommonMapping" : true,
+    "applyRequestCommonMapping" : true,
+    "applyResponseCommonMapping" : true,
+    "entityMetadata" : "{\"skyEntityMetadataRuntime\":{\"fMap\":{\"NOTIF_NUM\":\"EAM_NOTIF_DIST.NOTIF_NUM\"},\"relatedEntities\":[{\"relationshipType\":\"ONE_TO_MANY\",\"service\":\"EAM_DOB_NOTIF\",\"relationshipKeys\":[{\"parentKey\":\"NOTIF_NUM\",\"childKey\":\"DOC_REF_NUM\"}],\"entityName\":\"EAM_ATTACH\"},{\"relationshipType\":\"ONE_TO_MANY\",\"relatedEntities\":[{\"relationshipType\":\"MANY_TO_ONE\",\"service\":\"EAM_DOB_NOTIF\",\"relationshipKeys\":[{\"parentKey\":\"ADDRESS_ID\",\"childKey\":\"ADDRNO\"}],\"entityName\":\"EAM_ADDRESS\"}],\"service\":\"EAM_DOB_NOTIF\",\"relationshipKeys\":[{\"parentKey\":\"NOTIF_NUM\",\"childKey\":\"DOC_NUM\"}],\"entityName\":\"EAM_NOTIFICATION_ADDRESS\"},{\"relationshipType\":\"ONE_TO_MANY\",\"relatedEntities\":[{\"relationshipType\":\"MANY_TO_ONE\",\"service\":\"EAM_DOB_NOTIF\",\"relationshipKeys\":[{\"parentKey\":\"EQUIP_ASSET_VAL\",\"childKey\":\"ASSET\"}],\"entityName\":\"EAM_ASSET_EQUIP\"},{\"relationshipType\":\"MANY_TO_ONE\",\"service\":\"EAM_DOB_NOTIF\",\"relationshipKeys\":[{\"parentKey\":\"FUNC_LOCATION\",\"childKey\":\"ASSET\"}],\"entityName\":\"EAM_ASSET_FLOC\"}],\"service\":\"EAM_DOB_NOTIF\",\"relationshipKeys\":[{\"parentKey\":\"NOTIF_NUM\",\"childKey\":\"NOTIF_NUM\"}],\"entityName\":\"EAM_NOTIF_ASSET\"},{\"relationshipType\":\"ONE_TO_MANY\",\"service\":\"EAM_DOB_NOTIF\",\"relationshipKeys\":[{\"parentKey\":\"NOTIF_NUM\",\"childKey\":\"NOTIF_NUM\"}],\"entityName\":\"EAM_NOTIF_STATUS_HIST\"},{\"relationshipType\":\"MANY_TO_ONE\",\"service\":\"EAM_DOB_NOTIF\",\"relationshipKeys\":[{\"parentKey\":\"USERID\",\"childKey\":\"USERID\"}],\"entityName\":\"EAM_NOTIF_USER\"}],\"sQuery\":\"EAM_NOTIF_DIST.DIST_KEY\",\"service\":\"EAM_DOB_NOTIF\",\"config\":{\"OPMODE\":\"true\"},\"entityName\":\"EAM_NOTIF\"}}",
+    "opcode" : "partialupdate",
+    "backendMeta" : {
+      "dataObjectName" : "EAM_DOB_NOTIF",
+      "libraryName" : "_SKYTECH_EAM",
+      "businessObjectName" : "EAM_NOTIF"
+    },
+    "relationshipHierarchyMapping" : {
+      "children" : [ {
+        "children" : [ {
+          "children" : [ ],
+          "name" : "EAM_ADDRESS",
+          "actions" : {
+            "create" : true,
+            "update" : true,
+            "partialupdate" : true,
+            "delete" : true
+          },
+          "selected" : false
+        } ],
+        "name" : "EAM_NOTIFICATION_ADDRESS",
+        "actions" : {
+          "create" : true,
+          "update" : true,
+          "partialupdate" : true,
+          "delete" : true
+        },
+        "selected" : true
+      } ],
+      "name" : "EAM_NOTIF",
+      "actions" : {
+        "create" : true,
+        "update" : true,
+        "partialupdate" : true,
+        "delete" : true
+      },
+      "selected" : true
+    },
+    "requestXmlMappingOverride" : false,
+    "responseXmlMappingOverride" : false,
+    "mapperData" : [ {
+      "name" : "base mapper1",
+      "order" : 1,
+      "requestXmlMappingOverride" : false,
+      "responseXmlMappingOverride" : false,
+      "disabled" : false,
+      "applyCommonMapping" : true,
+      "applyRequestCommonMapping" : true,
+      "applyResponseCommonMapping" : true
+    } ]
+  },
+  "enableFrontendUrl" : false
+}

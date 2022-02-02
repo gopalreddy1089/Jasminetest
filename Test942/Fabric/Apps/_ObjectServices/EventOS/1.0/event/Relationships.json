@@ -1,0 +1,13 @@
+[ {
+  "sourceObject" : "event",
+  "targetObject" : "event_speaker",
+  "relationshipKeys" : [ {
+    "sourceField" : "event_id",
+    "targetField" : "event_id",
+    "etag" : "31064113-4b1e-4c47-944a-3f74d6c398a7"
+  } ],
+  "name" : "event_event_speaker",
+  "type" : "OneToMany",
+  "custom" : false,
+  "cascadeDelete" : true
+} ]

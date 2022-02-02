@@ -1,0 +1,13 @@
+[ {
+  "sourceObject" : "EAM_NOTIF_DIST",
+  "targetObject" : "EAM_NOTIF",
+  "relationshipKeys" : [ {
+    "sourceField" : "NOTIF_NUM",
+    "targetField" : "NOTIF_NUM",
+    "etag" : "e2905371-4784-49a7-9c6d-120d02ba0c2d"
+  } ],
+  "name" : "EAM_NOTIF_DIST_EAM_NOTIF",
+  "type" : "ManyToOne",
+  "custom" : false,
+  "cascadeDelete" : false
+} ]

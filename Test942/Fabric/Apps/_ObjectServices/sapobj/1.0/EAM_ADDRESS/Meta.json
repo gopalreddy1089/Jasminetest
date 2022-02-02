@@ -1,0 +1,131 @@
+{
+  "type" : "lob",
+  "custom" : false,
+  "junction" : false,
+  "customizable" : false,
+  "verbs" : {
+    "get" : "getMapping",
+    "update" : "updateMapping",
+    "create" : "createMapping",
+    "partialupdate" : "partialupdateMapping",
+    "delete" : "deleteMapping"
+  },
+  "entityProperties" : {
+    "UpdateTimeStampField" : {
+      "DateFormat" : "yyyyMMddHHmmss",
+      "Name" : "TIMESTAMP"
+    },
+    "SoftDeleteFlagField" : {
+      "ActiveValue" : null,
+      "InactiveValue" : "X",
+      "Name" : "DELETE_IND"
+    },
+    "backendMeta" : {
+      "dataObjectName" : "EAM_DOB_NOTIF",
+      "libraryName" : "_SKYTECH_EAM",
+      "businessObjectName" : "EAM_ADDRESS"
+    },
+    "designTimeBackendMeta" : {
+      "dataObjectName" : "EAM_DOB_NOTIF",
+      "libraryName" : "_SKYTECH_EAM",
+      "businessObjectName" : "EAM_ADDRESS"
+    }
+  },
+  "commonMappings" : [ {
+    "sourceFieldName" : "COUNTER",
+    "targetField" : "COUNTER",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "DELETE_IND",
+    "targetField" : "DELETE_IND",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "COUNTRY",
+    "targetField" : "COUNTRY",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "TEL_EXTENSION1",
+    "targetField" : "TEL_EXTENSION1",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "TEL_EXTENSION2",
+    "targetField" : "TEL_EXTENSION2",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "PHONE2",
+    "targetField" : "PHONE2",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "OPMODE",
+    "targetField" : "OPMODE",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "MOBILE2",
+    "targetField" : "MOBILE2",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "STREET",
+    "targetField" : "STREET",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "PHONE1",
+    "targetField" : "PHONE1",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "LATITUDE",
+    "targetField" : "LATITUDE",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "NAME2",
+    "targetField" : "NAME2",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "NAME1",
+    "targetField" : "NAME1",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "MOBILE1",
+    "targetField" : "MOBILE1",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "POST_CODE",
+    "targetField" : "POST_CODE",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "ADDRNO",
+    "targetField" : "ADDRNO",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "EMAIL",
+    "targetField" : "EMAIL",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "CITY",
+    "targetField" : "CITY",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "LONGITUDE",
+    "targetField" : "LONGITUDE",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "TIMESTAMP",
+    "targetField" : "TIMESTAMP",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "REGION",
+    "targetField" : "REGION",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "FAX_EXTENSION",
+    "targetField" : "FAX_EXTENSION",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "FAX",
+    "targetField" : "FAX",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "HOUSE_NUM",
+    "targetField" : "HOUSE_NUM",
+    "type" : "request_response"
+  } ]
+}

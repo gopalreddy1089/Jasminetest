@@ -1,0 +1,50 @@
+{
+  "type" : "lob",
+  "custom" : false,
+  "junction" : false,
+  "customizable" : false,
+  "verbs" : {
+    "get" : "getMapping",
+    "update" : "updateMapping",
+    "create" : "createMapping",
+    "delete" : "deleteMapping"
+  },
+  "entityProperties" : {
+    "BatchMode" : "pagination",
+    "backendMeta" : {
+      "backendObjectName" : "employees",
+      "qualifiedName" : "boolchanges.employees",
+      "metadataformatterobject" : "{\"displayName\":\"employees\",\"qualifiedName\":\"boolchanges.employees\",\"entityType\":\"com.kony.rdbms.metadata.model.AnnotatedTable\",\"name\":\"employees\",\"schemaName\":\"boolchanges\",\"tableName\":\"employees\"}"
+    },
+    "designTimeBackendMeta" : {
+      "backendObjectName" : "employees",
+      "qualifiedName" : "boolchanges.employees",
+      "metadataformatterobject" : "{\"displayName\":\"employees\",\"qualifiedName\":\"boolchanges.employees\",\"entityType\":\"com.kony.rdbms.metadata.model.AnnotatedTable\",\"name\":\"employees\",\"schemaName\":\"boolchanges\",\"tableName\":\"employees\"}"
+    }
+  },
+  "commonMappings" : [ {
+    "sourceFieldName" : "permanent",
+    "targetField" : "permanent",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "employee_id",
+    "targetField" : "employee_id",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "lastupdatetimestamp",
+    "targetField" : "lastupdatetimestamp",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "employee_name",
+    "targetField" : "employee_name",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "married",
+    "targetField" : "married",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "softdeleteflag",
+    "targetField" : "softdeleteflag",
+    "type" : "request_response"
+  } ]
+}

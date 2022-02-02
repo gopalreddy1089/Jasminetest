@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<endpoint name="default" dataAdapterId="84468750-a63b-4744-8069-e6582c4ca456" type="CustomDataAdapter" encryptSecureInfo="false">
+    <config>
+        <entry>
+            <key>http_auth_mode</key>
+            <value>none</value>
+        </entry>
+        <entry>
+            <key>identityProviderType</key>
+        </entry>
+        <entry>
+            <key>identityProvider</key>
+        </entry>
+        <entry>
+            <key>authservicetype</key>
+            <value>IdentityProvider</value>
+        </entry>
+    </config>
+    <apiThrottling/>
+    <jsonpath>false</jsonpath>
+</endpoint>

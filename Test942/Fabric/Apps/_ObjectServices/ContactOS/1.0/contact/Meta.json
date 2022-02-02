@@ -1,0 +1,59 @@
+{
+  "type" : "lob",
+  "custom" : false,
+  "junction" : false,
+  "customizable" : false,
+  "verbs" : {
+    "get" : "getMapping",
+    "create" : "createMapping",
+    "update" : "updateMapping",
+    "delete" : "deleteMapping"
+  },
+  "entityProperties" : {
+    "BatchMode" : "pagination",
+    "UpdateTimeStampField" : {
+      "DateFormat" : "",
+      "Name" : "modifiedDate"
+    },
+    "SoftDeleteFlagField" : {
+      "ActiveValue" : "false",
+      "InactiveValue" : "true",
+      "Name" : "is_disabled"
+    },
+    "backendMeta" : {
+      "backendObjectName" : "contact",
+      "qualifiedName" : "events.contact",
+      "metadataformatterobject" : "{\"name\":\"contact\",\"displayName\":\"contact\",\"qualifiedName\":\"events.contact\",\"schemaName\":\"events\",\"tableName\":\"contact\",\"entityType\":\"com.kony.rdbms.metadata.model.AnnotatedTable\"}"
+    },
+    "designTimeBackendMeta" : {
+      "backendObjectName" : "contact",
+      "qualifiedName" : "events.contact",
+      "metadataformatterobject" : "{\"name\":\"contact\",\"displayName\":\"contact\",\"qualifiedName\":\"events.contact\",\"schemaName\":\"events\",\"tableName\":\"contact\",\"entityType\":\"com.kony.rdbms.metadata.model.AnnotatedTable\"}"
+    }
+  },
+  "commonMappings" : [ {
+    "sourceFieldName" : "event_id",
+    "targetField" : "event_id",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "is_disabled",
+    "targetField" : "is_disabled",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "name",
+    "targetField" : "name",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "modifiedDate",
+    "targetField" : "modifiedDate",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "designation",
+    "targetField" : "designation",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "contact_id",
+    "targetField" : "contact_id",
+    "type" : "request_response"
+  } ]
+}

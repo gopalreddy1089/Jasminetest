@@ -1,0 +1,15 @@
+{
+  "name" : "default",
+  "dataAdapterId" : "5",
+  "type" : "CustomDataAdapter",
+  "encryptSecureInfo" : false,
+  "config" : {
+    "authservicetype" : "login",
+    "loginUrl" : "https://login.salesforce.com/services/oauth2/token",
+    "clientId" : "3MVG9d8..z.hDcPKPY5P6ugSzPSyC2czsOB9gLvc0YRKjFtII3qxpFByyHtHYYWh1JIm2CKHhak0xD9crWyCy",
+    "clientSecret" : "2605042281498250192",
+    "username" : "rakesh.gyanchandani@kony.com",
+    "password" : "kony@1234D295f1k3969XBCCpD0ok9Oz7"
+  },
+  "jsonpath" : false
+}

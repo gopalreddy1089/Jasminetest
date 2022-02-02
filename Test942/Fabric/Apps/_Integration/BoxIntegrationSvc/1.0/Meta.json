@@ -1,0 +1,7 @@
+{
+  "serviceType" : "integration",
+  "dataAdapter" : {
+    "name" : "Box adapter",
+    "version" : "1.0"
+  }
+}

@@ -1,0 +1,62 @@
+[
+    {
+        "testName": "objectsync",
+        "appName": "Test942",
+        "result": "jasmineReport01-02-2022_16_02_12.html",
+        "passedCount": 0,
+        "failedCount": 1,
+        "pendingCount": 0,
+        "timeStamp": "01-02-2022 16:02:12",
+        "runnerType": "TestCaseRecorder",
+        "channelName": "Desktop",
+        "crashed": false
+    },
+    {
+        "testName": "objectsync",
+        "appName": "Test942",
+        "result": "jasmineReport01-02-2022_16_01_55.html",
+        "passedCount": 0,
+        "failedCount": 1,
+        "pendingCount": 0,
+        "timeStamp": "01-02-2022 16:01:55",
+        "runnerType": "TestCaseRecorder",
+        "channelName": "Desktop",
+        "crashed": false
+    },
+    {
+        "testName": "objectsync",
+        "appName": "Test942",
+        "result": "jasmineReport01-02-2022_16_01_39.html",
+        "passedCount": 0,
+        "failedCount": 1,
+        "pendingCount": 0,
+        "timeStamp": "01-02-2022 16:01:39",
+        "runnerType": "TestCaseRecorder",
+        "channelName": "Desktop",
+        "crashed": false
+    },
+    {
+        "testName": "objectsync",
+        "appName": "Test942",
+        "result": "jasmineReport01-02-2022_16_01_26.html",
+        "passedCount": 0,
+        "failedCount": 1,
+        "pendingCount": 0,
+        "timeStamp": "01-02-2022 16:01:26",
+        "runnerType": "TestCaseRecorder",
+        "channelName": "Desktop",
+        "crashed": false
+    },
+    {
+        "testName": "objectsync",
+        "appName": "Test942",
+        "result": "jasmineReport01-02-2022_16_01_03.html",
+        "passedCount": 0,
+        "failedCount": 1,
+        "pendingCount": 0,
+        "timeStamp": "01-02-2022 16:01:03",
+        "runnerType": "TestCaseRecorder",
+        "channelName": "Desktop",
+        "crashed": false
+    }
+]

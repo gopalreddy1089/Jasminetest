@@ -1,0 +1,67 @@
+{
+  "type" : "lob",
+  "custom" : false,
+  "junction" : false,
+  "customizable" : false,
+  "verbs" : {
+    "get" : "getMapping",
+    "createBinary" : "createBinaryMapping",
+    "create" : "createMapping",
+    "update" : "updateMapping",
+    "getBinary" : "getBinaryMapping",
+    "delete" : "deleteMapping",
+    "updateBinary" : "updateBinaryMapping",
+    "deleteBinary" : "deleteBinaryMapping"
+  },
+  "entityProperties" : {
+    "BatchMode" : "pagination",
+    "UpdateTimeStampField" : {
+      "DateFormat" : "",
+      "Name" : "modifiedDate"
+    },
+    "SoftDeleteFlagField" : {
+      "ActiveValue" : "false",
+      "InactiveValue" : "true",
+      "Name" : "is_disabled"
+    },
+    "backendMeta" : {
+      "backendObjectName" : "binaryContact",
+      "qualifiedName" : "events.binaryContact",
+      "metadataformatterobject" : "{\"name\":\"binaryContact\",\"displayName\":\"binaryContact\",\"qualifiedName\":\"events.binaryContact\",\"schemaName\":\"events\",\"tableName\":\"binaryContact\",\"entityType\":\"com.kony.rdbms.metadata.model.AnnotatedTable\"}"
+    },
+    "designTimeBackendMeta" : {
+      "backendObjectName" : "binaryContact",
+      "qualifiedName" : "events.binaryContact",
+      "metadataformatterobject" : "{\"name\":\"binaryContact\",\"displayName\":\"binaryContact\",\"qualifiedName\":\"events.binaryContact\",\"schemaName\":\"events\",\"tableName\":\"binaryContact\",\"entityType\":\"com.kony.rdbms.metadata.model.AnnotatedTable\"}"
+    }
+  },
+  "commonMappings" : [ {
+    "sourceFieldName" : "event_id",
+    "targetField" : "event_id",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "is_disabled",
+    "targetField" : "is_disabled",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "name",
+    "targetField" : "name",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "modifiedDate",
+    "targetField" : "modifiedDate",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "designation",
+    "targetField" : "designation",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "contact_id",
+    "targetField" : "contact_id",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "contactPic",
+    "targetField" : "contactPic",
+    "type" : "request_response"
+  } ]
+}

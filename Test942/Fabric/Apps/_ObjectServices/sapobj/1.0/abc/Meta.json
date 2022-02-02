@@ -1,0 +1,16 @@
+{
+  "type" : "lob",
+  "custom" : false,
+  "junction" : false,
+  "customizable" : false,
+  "entityProperties" : {
+    "BatchMode" : "none",
+    "backendMeta" : {
+      "libraryName" : "ABAP_FUNCTION_TEST",
+      "dataObjectName" : "BAPI_PARTNEREMPLOYEE_EDIT",
+      "children" : "[]",
+      "businessObjectName" : "CUSTOMER"
+    },
+    "designTimeBackendMeta" : { }
+  }
+}

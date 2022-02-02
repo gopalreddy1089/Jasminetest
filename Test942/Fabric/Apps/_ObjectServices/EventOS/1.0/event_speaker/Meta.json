@@ -1,0 +1,53 @@
+{
+  "type" : "lob",
+  "custom" : false,
+  "junction" : false,
+  "customizable" : false,
+  "verbs" : {
+    "get" : "getMapping",
+    "create" : "createMapping",
+    "update" : "updateMapping",
+    "delete" : "deleteMapping"
+  },
+  "entityProperties" : {
+    "BatchMode" : "pagination",
+    "UpdateTimeStampField" : {
+      "DateFormat" : "",
+      "Name" : "modified_time"
+    },
+    "SoftDeleteFlagField" : {
+      "Name" : "is_disabled"
+    },
+    "backendMeta" : {
+      "backendObjectName" : "event_speaker",
+      "qualifiedName" : "events.event_speaker",
+      "metadataformatterobject" : "{\"name\":\"event_speaker\",\"displayName\":\"event_speaker\",\"qualifiedName\":\"events.event_speaker\",\"schemaName\":\"events\",\"tableName\":\"event_speaker\",\"entityType\":\"com.kony.rdbms.metadata.model.AnnotatedTable\"}"
+    },
+    "designTimeBackendMeta" : {
+      "backendObjectName" : "event_speaker",
+      "qualifiedName" : "events.event_speaker",
+      "metadataformatterobject" : "{\"name\":\"event_speaker\",\"displayName\":\"event_speaker\",\"qualifiedName\":\"events.event_speaker\",\"schemaName\":\"events\",\"tableName\":\"event_speaker\",\"entityType\":\"com.kony.rdbms.metadata.model.AnnotatedTable\"}"
+    }
+  },
+  "commonMappings" : [ {
+    "sourceFieldName" : "event_id",
+    "targetField" : "event_id",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "modified_time",
+    "targetField" : "modified_time",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "speaker_id",
+    "targetField" : "speaker_id",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "is_disabled",
+    "targetField" : "is_disabled",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "session_speaker_id",
+    "targetField" : "session_speaker_id",
+    "type" : "request_response"
+  } ]
+}

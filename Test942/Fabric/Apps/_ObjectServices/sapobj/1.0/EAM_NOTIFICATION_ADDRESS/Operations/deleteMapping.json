@@ -1,0 +1,77 @@
+{
+  "operationConfig" : {
+    "name" : "deleteEAMNOTIFICATIONADDRESS2521",
+    "type" : "MappedToBackend",
+    "cachable" : false,
+    "smsEnabled" : false,
+    "security" : "authorized_app_user",
+    "responseEncoding" : "UTF-8",
+    "httpMethod" : "GET",
+    "decodeResponseBody" : false,
+    "referencingEndpoint" : "default",
+    "inputs" : [ {
+      "id" : "ADDR_TYPE",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "ADDR_TYPE_ID",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    }, {
+      "id" : "DOC_NUM",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false,
+      "isExtended" : false
+    } ],
+    "headers" : [ {
+      "id" : "KonySAP-Session-Key",
+      "scope" : "request"
+    } ],
+    "applyCommonMapping" : true,
+    "applyRequestCommonMapping" : true,
+    "applyResponseCommonMapping" : true,
+    "entityMetadata" : "{\"skyEntityMetadataRuntime\":{\"fMap\":{\"DOC_NUM\":\"EAM_NOTIF_DIST.NOTIF_NUM\"},\"relatedEntities\":[{\"relationshipType\":\"MANY_TO_ONE\",\"service\":\"EAM_DOB_NOTIF\",\"relationshipKeys\":[{\"parentKey\":\"ADDRESS_ID\",\"childKey\":\"ADDRNO\"}],\"entityName\":\"EAM_ADDRESS\"}],\"sQuery\":\"EAM_NOTIF_DIST.DIST_KEY,EAM_NOTIF.NOTIF_NUM\",\"service\":\"EAM_DOB_NOTIF\",\"config\":{\"OPMODE\":\"true\"},\"entityName\":\"EAM_NOTIFICATION_ADDRESS\"}}",
+    "opcode" : "delete",
+    "backendMeta" : {
+      "dataObjectName" : "EAM_DOB_NOTIF",
+      "libraryName" : "_SKYTECH_EAM",
+      "businessObjectName" : "EAM_NOTIFICATION_ADDRESS"
+    },
+    "relationshipHierarchyMapping" : {
+      "children" : [ {
+        "children" : [ ],
+        "name" : "EAM_ADDRESS",
+        "actions" : {
+          "delete" : true
+        },
+        "selected" : false
+      } ],
+      "name" : "EAM_NOTIFICATION_ADDRESS",
+      "actions" : {
+        "delete" : true
+      },
+      "selected" : true
+    },
+    "requestXmlMappingOverride" : false,
+    "responseXmlMappingOverride" : false,
+    "mapperData" : [ {
+      "name" : "base mapper1",
+      "order" : 1,
+      "requestXmlMappingOverride" : false,
+      "responseXmlMappingOverride" : false,
+      "disabled" : false,
+      "applyCommonMapping" : true,
+      "applyRequestCommonMapping" : true,
+      "applyResponseCommonMapping" : true
+    } ]
+  },
+  "enableFrontendUrl" : false
+}

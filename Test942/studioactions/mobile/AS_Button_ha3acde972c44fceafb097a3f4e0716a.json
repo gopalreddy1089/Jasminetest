@@ -1,0 +1,28 @@
+{
+    "AS_Button_ha3acde972c44fceafb097a3f4e0716a": {
+        "id": "AS_Button_ha3acde972c44fceafb097a3f4e0716a",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "Form1",
+            "type": "forms",
+            "platform": "",
+            "KUID": "f068a324c55b44c3b22facaf77a2104b"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__d48461f19dc344da8d36a07dfc7677f8",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "getFlowTag",
+            "display": "getFlowTag",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null,
+            "source": "module"
+        }]
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "AS_Button_fe973dff19034d2ba9891c8f993fc384": {
+        "id": "AS_Button_fe973dff19034d2ba9891c8f993fc384",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "Form1",
+            "type": "forms",
+            "platform": "",
+            "KUID": "f068a324c55b44c3b22facaf77a2104b"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__d2222a8921524ec8bcd0759cffb82dc8",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "uploadBinaryUsingFSA",
+            "display": "uploadBinaryUsingFSA",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null,
+            "source": "module"
+        }]
+    }
+}

@@ -1,0 +1,15 @@
+{
+  "name" : "OAuthBox",
+  "displayName" : "OAuthBox",
+  "type" : "oauth2",
+  "version" : "1.0",
+  "metaPreference" : -1,
+  "config" : "{\"logout_url\":\"https://www.box.com/logout\",\"auth_type\":\"oauth2\",\"additional_data\":{\"refresh_request\":[],\"token_request\":[],\"revoke_request\":[],\"profile_request\":[],\"authorize_request\":[]},\"session_restrictions\":{\"session_restriction_type\":\"allow_any_number_of_sessions\"},\"grant_type\":\"authorization_code\",\"profile\":{\"profile_attribute_selectors\":{\"federation_id\":\"id\",\"last_name\":\"\",\"phone_number\":\"phone\",\"custom_profile_attribute_selectors\":{},\"display_name\":\"name\",\"first_name\":\"\",\"email\":\"login\"},\"endpoint\":{\"location\":\"url\",\"type\":\"direct\",\"value\":\"https://api.box.com/2.0/users/me\"},\"request_method\":\"GET\"},\"authentication_scheme\":\"header\",\"dependent_providers\":[],\"client_authentication\":{\"authentication_scheme\":\"form\",\"client_secret\":\"hGyT7vPkdeXtlXzZAvunfDRtUReltiFD\",\"client_id\":\"skhtkb5jpxhx8mgy0gghl1gekq76xqw1\"},\"oauthProviderType\":\"box\",\"authorization_endpoint\":\"https://account.box.com/api/oauth2/authorize\",\"token_endpoint\":\"https://api.box.com/oauth2/token\"}",
+  "policyConfig" : "{\"def_user_status\":\"pending\",\"max_login_fail\":5}",
+  "admissionPolicy" : "no_approval_needed",
+  "identityMeta" : {
+    "allow_sso" : false
+  },
+  "isIntegrityEnabled" : true,
+  "ssoenabled" : false
+}

@@ -1,0 +1,58 @@
+{
+  "type" : "lob",
+  "custom" : false,
+  "junction" : false,
+  "customizable" : false,
+  "verbs" : {
+    "get" : "getMapping",
+    "update" : "updateMapping",
+    "create" : "createMapping",
+    "delete" : "deleteMapping"
+  },
+  "entityProperties" : {
+    "BatchMode" : "pagination",
+    "backendMeta" : {
+      "backendObjectName" : "designations",
+      "qualifiedName" : "boolchanges.designations",
+      "metadataformatterobject" : "{\"displayName\":\"designations\",\"qualifiedName\":\"boolchanges.designations\",\"entityType\":\"com.kony.rdbms.metadata.model.AnnotatedTable\",\"name\":\"designations\",\"schemaName\":\"boolchanges\",\"tableName\":\"designations\"}"
+    },
+    "designTimeBackendMeta" : {
+      "backendObjectName" : "designations",
+      "qualifiedName" : "boolchanges.designations",
+      "metadataformatterobject" : "{\"displayName\":\"designations\",\"qualifiedName\":\"boolchanges.designations\",\"entityType\":\"com.kony.rdbms.metadata.model.AnnotatedTable\",\"name\":\"designations\",\"schemaName\":\"boolchanges\",\"tableName\":\"designations\"}"
+    }
+  },
+  "commonMappings" : [ {
+    "sourceFieldName" : "from_date",
+    "targetField" : "from_date",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "to_date",
+    "targetField" : "to_date",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "meets_expectation",
+    "targetField" : "meets_expectation",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "employee_id",
+    "targetField" : "employee_id",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "lastupdatetimestamp",
+    "targetField" : "lastupdatetimestamp",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "designation",
+    "targetField" : "designation",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "early_promotion",
+    "targetField" : "early_promotion",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "softdeleteflag",
+    "targetField" : "softdeleteflag",
+    "type" : "request_response"
+  } ]
+}

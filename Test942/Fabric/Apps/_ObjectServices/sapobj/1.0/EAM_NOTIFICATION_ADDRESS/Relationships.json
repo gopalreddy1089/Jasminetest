@@ -1,0 +1,13 @@
+[ {
+  "sourceObject" : "EAM_NOTIFICATION_ADDRESS",
+  "targetObject" : "EAM_ADDRESS",
+  "relationshipKeys" : [ {
+    "sourceField" : "ADDRESS_ID",
+    "targetField" : "ADDRNO",
+    "etag" : "e7c4dfcd-bb22-4468-8f44-460745ecf040"
+  } ],
+  "name" : "EAM_NOTIFICATION_ADDRESS_EAM_ADDRESS",
+  "type" : "ManyToOne",
+  "custom" : false,
+  "cascadeDelete" : false
+} ]

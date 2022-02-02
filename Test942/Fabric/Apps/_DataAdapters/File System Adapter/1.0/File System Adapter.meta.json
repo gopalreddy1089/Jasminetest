@@ -1,0 +1,65 @@
+{
+  "zipMeta": {
+    "displayName": "File System Adapter",
+    "author": "aditya.gollakota@kony.com",
+    "basePackage": "com.kony.adapter.swagger",
+    "description": "File System Adapter provides the ability to securely upload/download binary content into a local or mounted drive on the customer\u2019s premises. It also provides the ability to see list of files in a folder(namespace) as well as support to delete files",
+    "supportedOdataCriteriaParams": [],
+    "adapterType": "swagger",
+    "version": "1.0",
+    "serviceDefProps": {
+      "zipName": "File System Adapter.zip",
+      "basepackage": "com.kony.adapter.swagger"
+    },
+    "fileSize": 2521,
+    "preferredBatchingType": "none",
+    "supportedFeatureTypes": [
+      "integration",
+      "object"
+    ],
+    "connectionManager": {"connectionProperties": [{
+      "isRequired": false,
+      "displayName": "Service Namespace",
+      "defaultValue": "",
+      "name": "serviceNameSpace",
+      "description": "Directory path of your service",
+      "order": 0
+    }]},
+    "zipName": "zipName",
+    "name": "File System Adapter",
+    "templateContainer": {
+      "groupName": "Binary",
+      "binaryService": [
+        {
+          "templates": [{
+            "path": "/templates/uploadInitiate.json",
+            "name": "uploadInitiate.json",
+            "templateData": "{\r\n\t\"domain\": \"#middlewaredomain\",\r\n\t\"relativepath\": \"/KonyFileServiceServlet\",\r\n\t\"method\": \"post\",\r\n\t\"uploadMode\": \"multipart\",\r\n\t\"headers\": {\t\t\r\n\t\"ACCESS_TOKEN\":\"$TemplateFunctions.encryptText($KONY_SERVER_FILE_SERVICE_PUID)\"\r\n\t  },\r\n\t\"httpStatusCode\": \"309\",\r\n\t\"requestBody\": {\r\n\t\"attributes\": {\r\n\t\t\t\"serviceNameSpace\": \"$TemplateFunctions.encryptText(${serviceNameSpace})\",\r\n\t\t\t\"securityKey\": \"$TemplateFunctions.encryptText(${securityKey})\",\r\n\t\t\t\"fileNameWithExtension\": \"$TemplateFunctions.encryptText(${fileNameWithExtension})\"\r\n\t\t},\r\n\t\"file\": \"${fileContent}\"\r\n\t}\r\n}"
+          }],
+          "name": "postFile",
+          "type": "upload"
+        },
+        {
+          "templates": [{
+            "path": "/templates/downloadInitiate.json",
+            "name": "downloadInitiate.json",
+            "templateData": "{\r\n\t\"domain\": \"#middlewaredomain\",\r\n\t\"relativepath\":\"/KonyFileServiceServlet?serviceNameSpace=$TemplateFunctions.encodeURL($TemplateFunctions.encryptText(${serviceNameSpace}))&securityKey=$TemplateFunctions.encodeURL($TemplateFunctions.encryptText(${securityKey}))&fileNameWithExtension=$TemplateFunctions.encodeURL($TemplateFunctions.encryptText(${fileNameWithExtension}))\",\r\n\t\"method\": \"get\",\r\n\t\"headers\": {\r\n\t\"ACCESS_TOKEN\":\"$TemplateFunctions.encryptText($KONY_SERVER_FILE_SERVICE_PUID)\"\r\n\t},\r\n\t\"httpStatusCode\": \"309\"\r\n}\r\n"
+          }],
+          "name": "getFile",
+          "type": "download"
+        }
+      ],
+      "connectionPropertyContainer": {"connectionProperties": [{
+        "isRequired": false,
+        "displayName": "Service Namespace",
+        "defaultValue": "",
+        "name": "serviceNameSpace",
+        "description": "Directory path of your service",
+        "order": 0
+      }]}
+    },
+    "minMobileFabricSupportedVersion": "8.2",
+    "authenticationType": "*"
+  },
+  "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAA+VBMVEUAAAD//wCA/4D/qlX/gECZzGb/mTOA1VX/n0D/mTOIu1WPv1D/pTzxnEeSwlWPw1P4njz4oDqOxlX4oTz4nTv6nTyRw1D6oDz6nz+OwlCQxFH8nj38nzz8nz38nzyQw1GOxFOPwlL6nj2Ow1OQwlOQw1H7nzyPxFKPw1L7nzyPw1L7nT77nz37nT37nT38nj2Pw1L6nj2PwlL6nz2Pw1H6nj2PwlKPw1P7nj6OxFKQw1KPw1KOwlKPw1KOw1GQw1L7njz7nT2Pw1KPwlL7nj37nj37nj2Pw1KPwlKPw1KPw1L7nj2Pw1KPw1L7nj37nj2Pw1L7nj3///9bp/jeAAAAUHRSTlMAAQIDBAUFBggKDxAREhUiIiMkJicvMzM1NkVPVVhdXl9kZG91d3d5f3+AgIKFjZ6ho6SkpqaoqqqsrrK1u7y+wsTJyszQ1drb3ejt/P39/nhBcu8AAAABYktHRFINYC2QAAAAyklEQVQ4y93T1w6CMBSA4eLeW3EgbtxbUXDvre37v4xFJVpD9db43dDk/KEJJwDwM2L1Plbx0uZxdHfwU4LqMuDA+MvKojW2uTG7cqqhNvvCcxsbxRNULFwAmGaIMLXiIAHFHNaCYx0AFk540URpHBRgSHkRI8MCeXOQE1AZP0v3ANg2p8noaZhxrhERAJ+03T3tYZZ/C0hmKIfVYD7SAgesGlD8T1D8FvCfg3PX8DHQW28fPU8LpMdWIkdKkFL3Fm30NHSSzM/8lFeahZWQ6fyHzwAAAABJRU5ErkJggg=="
+}

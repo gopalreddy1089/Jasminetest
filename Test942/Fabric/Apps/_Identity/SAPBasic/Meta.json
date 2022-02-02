@@ -1,0 +1,15 @@
+{
+  "name" : "SAPBasic",
+  "displayName" : "SAPBasic",
+  "type" : "sky",
+  "version" : "1.0",
+  "metaPreference" : -1,
+  "config" : "{\"custom_request_headers\":{},\"scheme\":\"http\",\"session_restrictions\":{\"session_restriction_type\":\"allow_any_number_of_sessions\"},\"port\":\"35099\",\"prefix\":\"KonySAP\",\"custom_additional_request_headers\":{},\"is_custom\":false,\"gateway\":\"connect.kony.com\"}",
+  "policyConfig" : "{\"def_user_status\":\"pending\",\"max_login_fail\":5}",
+  "admissionPolicy" : "no_approval_needed",
+  "identityMeta" : {
+    "allow_sso" : false
+  },
+  "isIntegrityEnabled" : true,
+  "ssoenabled" : false
+}

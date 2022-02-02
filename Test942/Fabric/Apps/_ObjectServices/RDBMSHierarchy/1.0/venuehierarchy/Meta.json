@@ -1,0 +1,51 @@
+{
+  "type" : "lob",
+  "custom" : false,
+  "junction" : false,
+  "customizable" : false,
+  "verbs" : {
+    "get" : "getMapping",
+    "create" : "createMapping",
+    "update" : "updateMapping",
+    "delete" : "deleteMapping"
+  },
+  "entityProperties" : {
+    "BatchMode" : "pagination",
+    "UpdateTimeStampField" : {
+      "DateFormat" : "",
+      "Name" : "modifiedDate"
+    },
+    "SoftDeleteFlagField" : {
+      "ActiveValue" : "false",
+      "InactiveValue" : "true",
+      "Name" : "is_disabled"
+    },
+    "backendMeta" : {
+      "backendObjectName" : "venuehierarchy",
+      "qualifiedName" : "events.venuehierarchy",
+      "metadataformatterobject" : "{\"name\":\"venuehierarchy\",\"displayName\":\"venuehierarchy\",\"qualifiedName\":\"events.venuehierarchy\",\"schemaName\":\"events\",\"tableName\":\"venuehierarchy\",\"entityType\":\"com.kony.rdbms.metadata.model.AnnotatedTable\"}"
+    },
+    "designTimeBackendMeta" : {
+      "backendObjectName" : "venuehierarchy",
+      "qualifiedName" : "events.venuehierarchy",
+      "metadataformatterobject" : "{\"name\":\"venuehierarchy\",\"displayName\":\"venuehierarchy\",\"qualifiedName\":\"events.venuehierarchy\",\"schemaName\":\"events\",\"tableName\":\"venuehierarchy\",\"entityType\":\"com.kony.rdbms.metadata.model.AnnotatedTable\"}"
+    }
+  },
+  "commonMappings" : [ {
+    "sourceFieldName" : "venue_name",
+    "targetField" : "venue_name",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "is_disabled",
+    "targetField" : "is_disabled",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "modifiedDate",
+    "targetField" : "modifiedDate",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "venue_id",
+    "targetField" : "venue_id",
+    "type" : "request_response"
+  } ]
+}

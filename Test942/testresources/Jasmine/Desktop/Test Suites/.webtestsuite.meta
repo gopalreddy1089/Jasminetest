@@ -1,0 +1,37 @@
+{
+    "groupName": "Test Suites",
+    "testSuiteName": "webtestsuite",
+    "testCaseInfo": [
+        {
+            "testcaseName": "setup.js",
+            "selectedDataset": "dataset",
+            "appName": "Test942"
+        },
+        {
+            "testcaseName": "setflow.js",
+            "selectedDataset": "dataset",
+            "appName": "Test942"
+        },
+        {
+            "testcaseName": "getflow.js",
+            "selectedDataset": "dataset",
+            "appName": "Test942"
+        },
+        {
+            "testcaseName": "FlushEvent.js",
+            "selectedDataset": "dataset",
+            "appName": "Test942"
+        },
+        {
+            "testcaseName": "SendCustomMetrics.js",
+            "selectedDataset": "dataset",
+            "appName": "Test942"
+        }
+    ],
+    "appName": "Test942",
+    "usedBy": {
+        "Test942": [
+            "webtestplan.js"
+        ]
+    }
+}

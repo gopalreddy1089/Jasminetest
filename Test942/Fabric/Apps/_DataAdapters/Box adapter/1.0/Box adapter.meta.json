@@ -1,0 +1,58 @@
+{
+  "zipMeta": {
+    "author": "Kony",
+    "displayName": "Box adapter",
+    "basePackage": "com.kony.adapter.raml",
+    "description": "Box adapter",
+    "supportedOdataCriteriaParams": [],
+    "adapterType": "raml",
+    "version": "1.0",
+    "serviceDefProps": {
+      "ramlStream": "Box adapter.zip",
+      "basepackage": "com.kony.adapter.raml"
+    },
+    "fileSize": 78964,
+    "preferredBatchingType": "none",
+    "supportedFeatureTypes": [
+      "integration",
+      "object"
+    ],
+    "zipName": "ramlStream",
+    "name": "Box adapter",
+    "templateContainer": {
+      "groupName": "Binary",
+      "binaryService": [
+        {
+          "templates": [{
+            "path": "/templates/uploadInitiate.json",
+            "name": "uploadInitiate.json",
+            "templateData": "{\r\n\t\"endpointUrl\": \"https://upload.box.com/api/2.0/files/content\",\r\n\t\"method\": \"post\",\r\n\t\"uploadMode\": \"multipart\",\r\n\t\"headers\": {\r\n\t\t\"Authorization\": \"${context.Authorization}\"\r\n\t},\r\n\t\"requestBody\": {\r\n\t\t\"attributes\": {\r\n\t\t\t\"name\": \"${fileName}\",\r\n\t\t\t\"parent\": {\r\n\t\t\t\t\"id\": \"${folderId}\"\r\n\t\t\t}\r\n\t\t},\r\n\t\t\"file\": \"${fileContent}\"\r\n\t}\r\n}"
+          }],
+          "name": "post_files_content",
+          "type": "upload"
+        },
+        {
+          "templates": [{
+            "path": "/templates/downloadInitiate.json",
+            "name": "downloadInitiate.json",
+            "templateData": "{\r\n\t\"endpointUrl\": \"https://api.box.com/2.0/files/${fileId}/content\",\r\n\t\"method\": \"get\",\r\n\t\"headers\": {\r\n\t\t\"Authorization\": \"${context.Authorization}\"\r\n\t},\r\n\t\"errors\": [{\r\n\t\t\"401\": {\r\n\t\t\t\"errorMessagePath\": \"message\"\r\n\t\t}\r\n\t}]\r\n}"
+          }],
+          "name": "get_files_fileId_content",
+          "type": "download"
+        },
+        {
+          "templates": [{
+            "path": "/templates/chunk_downloadInitiate.json",
+            "name": "chunk_downloadInitiate.json",
+            "templateData": "{\n\t\"endpointUrl\": \"https://api.box.com/2.0/files/${fileId}/content\",\n\t\"method\": \"get\",\n\t\"headers\": {\n\t\t\"Authorization\": \"${context.Authorization}\",\n\t\t\"Range\": \"bytes=${start_range}-${end_range}\"\n\t}\n}"
+          }],
+          "name": "get_files_fileId_content_partial",
+          "type": "download"
+        }
+      ]
+    },
+    "minMobileFabricSupportedVersion": "7.3",
+    "authenticationType": "oauth2"
+  },
+  "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAUCAYAAADskT9PAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAIQSURBVEhL7ZXNaxNRFMXPTGfaFNrEYJGubAkKrUgXoltFRAS/NgouFHQh6EahCO667X8gIrgRrWgCVq1dVEUUFAQ/FpGoWYhIjUYhXzNJmk4mvZ6ZPOgmk65CXOS3mLlz5vLmzLv3vacJQRfR1b1r9Az8vwaqrkB7UES2tqaUzhBoIF1pAIUGkhbvHSTQgKHx0qchanpB52jfAzRw47uD8SULWxYtzKZX1QsgkXEQW7IRWSjh/Meqr2k3c5j5XPNjj4XfdV9brgaXMXAj+mS5mFq0/dgY1DHSryH7x8XxiQEcGTVw4WUFCOsYG9LxI+ti0+Y+7Bsx8IgGEofC2BPVMR4vIUotfzTsj9MSz0ArkqW64HZe9r6ylSIyk1oRzOUF9/Iy+cxSqsj1bzXBrZwkfjqy+4UtuMuceEHM+aLKCCawBP68cCVMbxtoCuTKdsaqJS7F+psBuRijzvynf+t4t3/Ij0H/yQOMNyDQwFTEYA8Al5MrSgHOfWCtvcHZG1dT67We9nJo7NioiWH2BNi4gyzN5BMLjQ2OmraH0dyygzPPy2wCPuj8Av/q9M4QZneEMBYvNu17y4X6rq0m9w7ga6aOLycimBjWod1hjknPp6L+eC3xC9GGVMmVk2/LcvhNWeYzjlJFcqtrcvZ9RQ6+Lss19oBH6GFRHv9az0nbrOH9AnM5DwH0juOegS4bAP4BlTJsJD1asQwAAAAASUVORK5CYII="
+}

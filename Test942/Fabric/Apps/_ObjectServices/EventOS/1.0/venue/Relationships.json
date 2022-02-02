@@ -1,0 +1,13 @@
+[ {
+  "sourceObject" : "venue",
+  "targetObject" : "event",
+  "relationshipKeys" : [ {
+    "sourceField" : "venue_id",
+    "targetField" : "venue_id",
+    "etag" : "0e26ee9f-11c5-4494-9d06-b5402eedcdcc"
+  } ],
+  "name" : "venue_event",
+  "type" : "OneToMany",
+  "custom" : false,
+  "cascadeDelete" : true
+} ]

@@ -1,0 +1,15 @@
+{
+  "name" : "SalesforceBasic",
+  "displayName" : "SalesforceBasic",
+  "type" : "salesforce",
+  "version" : "1.0",
+  "metaPreference" : -1,
+  "config" : "{\"session_restrictions\":{\"session_restriction_type\":\"allow_any_number_of_sessions\"},\"isOAuthEnabled\":\"false\",\"client_secret\":\"EBC86F7A381E1AE488CF9BD09C5D0BD83B85CE5FFCD901E2DC3182A09BD6F6E0\",\"client_id\":\"3MVG9fe4g9fhX0E6EIe53wFrjjrabfw1IcFyLs5smlRL2HmQfu5kUVixaXs6_ySnbP5qf53pwGEJZcDK36toS\",\"url\":\"https://login.salesforce.com/services/oauth2/token\"}",
+  "policyConfig" : "{\"def_user_status\":\"pending\",\"max_login_fail\":5}",
+  "admissionPolicy" : "no_approval_needed",
+  "identityMeta" : {
+    "allow_sso" : false
+  },
+  "isIntegrityEnabled" : true,
+  "ssoenabled" : false
+}

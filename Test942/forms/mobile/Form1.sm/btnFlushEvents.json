@@ -1,0 +1,52 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "50dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "65dp"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "saa139b354d04ff480382468299c0b9a",
+    "_text_": "flush events",
+    "_top_": {
+        "type": "string",
+        "value": "380dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "177dp"
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "sf2110a2822c4c8f9d1ebd07c3dd9458",
+    "id": "btnFlushEvents",
+    "ide_onClick": "AS_Button_bba8dd18b938463b8fdac52bda1026d1",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "b8287c99ac3b4f598a82a1fe571fb448",
+    "name": "kony.ui.Button",
+    "parent": "Form1",
+    "pf": "Form1",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "wType": "Button",
+    "zindex": 1
+}

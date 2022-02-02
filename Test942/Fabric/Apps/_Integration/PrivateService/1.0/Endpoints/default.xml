@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<endpoint name="default" type="JSON" url="https://infinite-forest-6441.herokuapp.com/json/oceanService?jsonOceans=true" encryptSecureInfo="false">
+    <config>
+        <entry>
+            <key>ignorehttpproxy</key>
+            <value>true</value>
+        </entry>
+        <entry>
+            <key>identityProviderType</key>
+            <value>salesforce</value>
+        </entry>
+        <entry>
+            <key>identityProvider</key>
+            <value>SalesforceBasic</value>
+        </entry>
+    </config>
+    <apiThrottling/>
+    <jsonpath>false</jsonpath>
+</endpoint>

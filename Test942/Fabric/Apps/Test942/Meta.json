@@ -1,0 +1,77 @@
+{
+  "subType" : "customapp",
+  "description" : "This app is created from Studio App Test942.\r\n",
+  "version" : "1.0",
+  "intSvcs" : [ {
+    "name" : "BoxIntegrationSvc",
+    "version" : "1.0",
+    "etag" : "741283da-1301-4fe0-a448-a23ce6a1e50a"
+  }, {
+    "name" : "NFSService",
+    "version" : "1.0",
+    "etag" : "cabea341-00e3-44a9-a6c0-1047294e7b94"
+  }, {
+    "name" : "PrivateService",
+    "version" : "1.0",
+    "etag" : "87b1a82f-73d9-41cb-9d89-9adc802b8c58"
+  }, {
+    "name" : "ProtectedService",
+    "version" : "1.0",
+    "etag" : "9a191fb3-37c7-4182-a2bb-e591fcd87188"
+  }, {
+    "name" : "PublicService",
+    "version" : "1.0",
+    "etag" : "75868d52-900f-4c80-aa0e-225052856227"
+  }, {
+    "name" : "S3Service",
+    "version" : "1.0",
+    "etag" : "1c50992d-2553-452f-ab62-5119525b298c"
+  } ],
+  "objectSvcs" : [ {
+    "name" : "AsyncTestService",
+    "version" : "1.0",
+    "etag" : "114ab304-c376-4c6b-9e39-a12ac82d6736"
+  }, {
+    "name" : "BooleanConversionService",
+    "version" : "1.0",
+    "etag" : "66c754b9-2449-48e7-8e25-bc1a8de340bc"
+  }, {
+    "name" : "boxObjectService",
+    "version" : "1.0",
+    "etag" : "c7af6462-625a-44a5-862d-648fb3b522c1"
+  }, {
+    "name" : "ContactOS",
+    "version" : "1.0",
+    "etag" : "19db2bdf-9ed8-45ff-9067-b9ea6509a36e"
+  }, {
+    "name" : "EventOS",
+    "version" : "1.0",
+    "etag" : "a1f2bcba-4f07-4ed3-bd75-7b4764976b0c"
+  }, {
+    "name" : "RDBMSHierarchy",
+    "version" : "1.0",
+    "etag" : "430fea09-b042-45d8-9b12-52d2b7d142c7"
+  }, {
+    "name" : "RDBMSObjectService",
+    "version" : "1.0",
+    "etag" : "da68059c-5c61-4537-a3f8-f0bd52965e05"
+  }, {
+    "name" : "S3ObjectSvc",
+    "version" : "1.0",
+    "etag" : "9e78ed7f-f43a-4ea4-a1fd-92048077df10"
+  }, {
+    "name" : "SalesforceDB",
+    "version" : "1.0",
+    "etag" : "419dc48c-1aba-448b-9e6a-6a1079b3fb9d"
+  }, {
+    "name" : "sapobj",
+    "version" : "1.0",
+    "etag" : "a1c7274c-3a67-4510-98fc-fddbeec4fee9"
+  }, {
+    "name" : "StorageObjectService",
+    "version" : "1.0",
+    "etag" : "11eb8db7-7784-4c70-baf1-a5fbc6454fa4"
+  } ],
+  "identity" : [ "InstagramOauth", "OAuthBox", "OAuthGoogle", "SalesforceBasic", "SAP1440", "SAPBasic", "userstore" ],
+  "identitySvcConf" : "{\"session_idle_timeout_mins\":20,\"session_max_duration_mins\":360,\"show_security_attributes\":false,\"is_integrity_enabled\":false,\"auto_extend\":true}"
+}

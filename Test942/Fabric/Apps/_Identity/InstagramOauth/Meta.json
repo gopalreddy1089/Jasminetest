@@ -1,0 +1,15 @@
+{
+  "name" : "InstagramOauth",
+  "displayName" : "InstagramOauth",
+  "type" : "oauth2",
+  "version" : "1.0",
+  "metaPreference" : -1,
+  "config" : "{\"logout_url\":\"https://instagram.com/accounts/logout\",\"auth_type\":\"oauth2\",\"additional_data\":{\"refresh_request\":[],\"token_request\":[],\"revoke_request\":[],\"profile_request\":[],\"authorize_request\":[]},\"grant_type\":\"authorization_code\",\"scope\":\"likes\",\"profile\":{\"profile_attribute_selectors\":{\"federation_id\":\"user.id\",\"last_name\":\"user.full_name\",\"custom_profile_attribute_selectors\":{},\"first_name\":\"user.username\"},\"endpoint\":{\"location\":\"token_response\",\"type\":\"direct\"},\"request_method\":\"GET\"},\"authentication_scheme\":\"header\",\"dependent_providers\":[],\"client_authentication\":{\"authentication_scheme\":\"form\",\"client_secret\":\"1ee67849a4b045569a8eee3499248699\",\"client_id\":\"6d91691d98ea4224ae473fe1ccf734a1\"},\"authorization_endpoint\":\"https://api.instagram.com/oauth/authorize\",\"token_endpoint\":\"https://api.instagram.com/oauth/access_token\"}",
+  "policyConfig" : "{\"max_login_fail\":5,\"def_user_status\":\"pending\"}",
+  "admissionPolicy" : "no_approval_needed",
+  "identityMeta" : {
+    "allow_sso" : false
+  },
+  "isIntegrityEnabled" : true,
+  "ssoenabled" : false
+}

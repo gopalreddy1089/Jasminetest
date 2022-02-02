@@ -1,0 +1,284 @@
+{
+  "operationConfig" : {
+    "name" : "queryEAMADDRESS8466",
+    "type" : "MappedToBackend",
+    "cachable" : false,
+    "smsEnabled" : false,
+    "security" : "authorized_app_user",
+    "responseEncoding" : "UTF-8",
+    "httpMethod" : "GET",
+    "decodeResponseBody" : false,
+    "referencingEndpoint" : "default",
+    "outputs" : [ {
+      "id" : "EAM_ADDRESS",
+      "scope" : "response",
+      "dataType" : "string",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "ADDRNO",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ADDRESS",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "CITY",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ADDRESS",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "COUNTER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ADDRESS",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "COUNTRY",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ADDRESS",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ADDRESS",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "EMAIL",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ADDRESS",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "FAX",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ADDRESS",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "FAX_EXTENSION",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ADDRESS",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "HOUSE_NUM",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ADDRESS",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "LATITUDE",
+      "scope" : "response",
+      "dataType" : "number",
+      "collectionID" : "EAM_ADDRESS",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "LONGITUDE",
+      "scope" : "response",
+      "dataType" : "number",
+      "collectionID" : "EAM_ADDRESS",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "MOBILE1",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ADDRESS",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "MOBILE2",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ADDRESS",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "NAME1",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ADDRESS",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "NAME2",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ADDRESS",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "OPMODE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ADDRESS",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "PHONE1",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ADDRESS",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "PHONE2",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ADDRESS",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "POST_CODE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ADDRESS",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "REGION",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ADDRESS",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "STREET",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ADDRESS",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "TEL_EXTENSION1",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ADDRESS",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "TEL_EXTENSION2",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ADDRESS",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EAM_ADDRESS",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "nextBatchId",
+      "scope" : "response",
+      "dataType" : "string",
+      "formatType" : "None",
+      "isExtended" : false
+    }, {
+      "id" : "hasMoreRecords",
+      "scope" : "response",
+      "dataType" : "string",
+      "formatType" : "None",
+      "isExtended" : false
+    } ],
+    "headers" : [ {
+      "id" : "KonySAP-Session-Key",
+      "scope" : "request"
+    } ],
+    "odata" : [ {
+      "id" : "$filter",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$top",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$skip",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$orderby",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$select",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$expand",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$batchsize",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$batchid",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    } ],
+    "applyCommonMapping" : true,
+    "applyRequestCommonMapping" : true,
+    "applyResponseCommonMapping" : true,
+    "entityMetadata" : "{\"skyEntityMetadataRuntime\":{\"fMap\":{\"ADDRNO\":\"EAM_NOTIFICATION_ADDRESS.ADDRESS_ID\"},\"sQuery\":\"EAM_NOTIF_DIST.DIST_KEY,EAM_NOTIF.NOTIF_NUM,EAM_NOTIFICATION_ADDRESS.DOC_NUM\",\"service\":\"EAM_DOB_NOTIF\",\"config\":{\"OPMODE\":\"true\"},\"entityName\":\"EAM_ADDRESS\"}}",
+    "opcode" : "query",
+    "backendMeta" : {
+      "dataObjectName" : "EAM_DOB_NOTIF",
+      "libraryName" : "_SKYTECH_EAM",
+      "businessObjectName" : "EAM_ADDRESS"
+    },
+    "relationshipHierarchyMapping" : {
+      "children" : [ ],
+      "name" : "EAM_ADDRESS",
+      "actions" : {
+        "get" : true
+      },
+      "selected" : true
+    },
+    "requestXmlMappingOverride" : false,
+    "responseXmlMappingOverride" : false,
+    "mapperData" : [ {
+      "name" : "base mapper1",
+      "order" : 1,
+      "requestXmlMappingOverride" : false,
+      "responseXmlMappingOverride" : false,
+      "disabled" : false,
+      "applyCommonMapping" : true,
+      "applyRequestCommonMapping" : true,
+      "applyResponseCommonMapping" : true
+    } ]
+  },
+  "enableFrontendUrl" : false
+}

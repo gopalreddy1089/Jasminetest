@@ -1,0 +1,11 @@
+{
+    "groupName": "Test Plans",
+    "testRunnerName": "androidtestplan",
+    "testSuiteInfo": [
+        {
+            "testSuiteName": "androidtestsuite.js",
+            "appName": "Test942"
+        }
+    ],
+    "appName": "Test942"
+}

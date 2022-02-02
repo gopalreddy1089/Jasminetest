@@ -1,0 +1,63 @@
+{
+  "type" : "lob",
+  "custom" : false,
+  "junction" : false,
+  "customizable" : false,
+  "verbs" : {
+    "get" : "getMapping",
+    "createBinary" : "createBinaryMapping",
+    "create" : "createMapping",
+    "update" : "updateMapping",
+    "getBinary" : "getBinaryMapping",
+    "delete" : "deleteMapping",
+    "updateBinary" : "updateBinaryMapping",
+    "deleteBinary" : "deleteBinaryMapping"
+  },
+  "entityProperties" : {
+    "BatchMode" : "pagination",
+    "UpdateTimeStampField" : {
+      "DateFormat" : "",
+      "Name" : "updatedtimestamp"
+    },
+    "SoftDeleteFlagField" : {
+      "ActiveValue" : "false",
+      "InactiveValue" : "true",
+      "Name" : "softdeleteflag"
+    },
+    "backendMeta" : {
+      "backendObjectName" : "media",
+      "qualifiedName" : "sdktesting.media",
+      "metadataformatterobject" : "{\"name\":\"media\",\"displayName\":\"media\",\"qualifiedName\":\"sdktesting.media\",\"schemaName\":\"sdktesting\",\"tableName\":\"media\",\"entityType\":\"com.kony.rdbms.metadata.model.AnnotatedTable\"}"
+    },
+    "designTimeBackendMeta" : {
+      "backendObjectName" : "media",
+      "qualifiedName" : "sdktesting.media",
+      "metadataformatterobject" : "{\"name\":\"media\",\"displayName\":\"media\",\"qualifiedName\":\"sdktesting.media\",\"schemaName\":\"sdktesting\",\"tableName\":\"media\",\"entityType\":\"com.kony.rdbms.metadata.model.AnnotatedTable\"}"
+    }
+  },
+  "commonMappings" : [ {
+    "sourceFieldName" : "name",
+    "targetField" : "name",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "createdtimestamp",
+    "targetField" : "createdtimestamp",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "updatedtimestamp",
+    "targetField" : "updatedtimestamp",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "description",
+    "targetField" : "description",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "url",
+    "targetField" : "url",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "softdeleteflag",
+    "targetField" : "softdeleteflag",
+    "type" : "request_response"
+  } ]
+}

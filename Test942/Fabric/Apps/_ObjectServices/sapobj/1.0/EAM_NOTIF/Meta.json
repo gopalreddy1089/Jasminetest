@@ -1,0 +1,631 @@
+{
+  "type" : "lob",
+  "custom" : false,
+  "junction" : false,
+  "customizable" : false,
+  "verbs" : {
+    "get" : "getMapping",
+    "update" : "updateMapping",
+    "create" : "createMapping",
+    "partialupdate" : "partialupdateMapping",
+    "delete" : "deleteMapping"
+  },
+  "entityProperties" : {
+    "UpdateTimeStampField" : {
+      "DateFormat" : "yyyyMMddHHmmss",
+      "Name" : "TIMESTAMP"
+    },
+    "SoftDeleteFlagField" : {
+      "ActiveValue" : null,
+      "InactiveValue" : "X",
+      "Name" : "DELETE_IND"
+    },
+    "backendMeta" : {
+      "dataObjectName" : "EAM_DOB_NOTIF",
+      "libraryName" : "_SKYTECH_EAM",
+      "businessObjectName" : "EAM_NOTIF"
+    },
+    "designTimeBackendMeta" : {
+      "dataObjectName" : "EAM_DOB_NOTIF",
+      "libraryName" : "_SKYTECH_EAM",
+      "businessObjectName" : "EAM_NOTIF"
+    }
+  },
+  "commonMappings" : [ {
+    "sourceFieldName" : "NOTF_REP_PER_NAM",
+    "targetField" : "NOTF_REP_PER_NAM",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "DELETE_IND",
+    "targetField" : "DELETE_IND",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "FLOCN_DESC",
+    "targetField" : "FLOCN_DESC",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "WRRNTY_END_DT",
+    "targetField" : "WRRNTY_END_DT",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "CODE_GRP_CAUSE",
+    "targetField" : "CODE_GRP_CAUSE",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "MARKER_DIST_UNIT",
+    "targetField" : "MARKER_DIST_UNIT",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "LOC_ACC",
+    "targetField" : "LOC_ACC",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "SALES_ORD",
+    "targetField" : "SALES_ORD",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "ASSET_NO",
+    "targetField" : "ASSET_NO",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "SALES_ORG",
+    "targetField" : "SALES_ORG",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "OFFSET2_UNIT",
+    "targetField" : "OFFSET2_UNIT",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "MATERIAL_EXT",
+    "targetField" : "MATERIAL_EXT",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "PLANGROUP",
+    "targetField" : "PLANGROUP",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "PURCH_NO_C",
+    "targetField" : "PURCH_NO_C",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "ITM_NUMBER",
+    "targetField" : "ITM_NUMBER",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "CODING_CODE",
+    "targetField" : "CODING_CODE",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "CAUSE_CODE",
+    "targetField" : "CAUSE_CODE",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "SORTFIELD",
+    "targetField" : "SORTFIELD",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "ABCINDIC",
+    "targetField" : "ABCINDIC",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "PLSECTN",
+    "targetField" : "PLSECTN",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "CATALOG_PROFILE",
+    "targetField" : "CATALOG_PROFILE",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "COMPTIME",
+    "targetField" : "COMPTIME",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "CHANGED_AT",
+    "targetField" : "CHANGED_AT",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "OFFSET2_VALUE",
+    "targetField" : "OFFSET2_VALUE",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "DIVISION",
+    "targetField" : "DIVISION",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "DISTR_CHAN",
+    "targetField" : "DISTR_CHAN",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "MARKER_DIST_STA",
+    "targetField" : "MARKER_DIST_STA",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "ACCEPTED",
+    "targetField" : "ACCEPTED",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "CODE_GRP_CODING",
+    "targetField" : "CODE_GRP_CODING",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "DELETE_FLAG",
+    "targetField" : "DELETE_FLAG",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "WBS_ELEMENT",
+    "targetField" : "WBS_ELEMENT",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "USER_STATUS",
+    "targetField" : "USER_STATUS",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "USERID",
+    "targetField" : "USERID",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "LINEAR_LENGTH",
+    "targetField" : "LINEAR_LENGTH",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "SUB_NUMBER",
+    "targetField" : "SUB_NUMBER",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "TEXT_LENGTH",
+    "targetField" : "TEXT_LENGTH",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "DEVICEDATA",
+    "targetField" : "DEVICEDATA",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "MATERIAL_GUID",
+    "targetField" : "MATERIAL_GUID",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "OPMODE",
+    "targetField" : "OPMODE",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "ADDR_NO_LOC",
+    "targetField" : "ADDR_NO_LOC",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "PROBLEM",
+    "targetField" : "PROBLEM",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "SALES_OFFICE",
+    "targetField" : "SALES_OFFICE",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "ENDML_DATE_TIME",
+    "targetField" : "ENDML_DATE_TIME",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "CAT_TYPE",
+    "targetField" : "CAT_TYPE",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "OFFSET1_UNIT",
+    "targetField" : "OFFSET1_UNIT",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "DESSTDATE",
+    "targetField" : "DESSTDATE",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "REFDATE",
+    "targetField" : "REFDATE",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "STRMLFNTIME",
+    "targetField" : "STRMLFNTIME",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "LRPID",
+    "targetField" : "LRPID",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "USERSTATUS_TXT",
+    "targetField" : "USERSTATUS_TXT",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "UNIT",
+    "targetField" : "UNIT",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "MNTPLAN",
+    "targetField" : "MNTPLAN",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "NOTIF_DATE_TIME",
+    "targetField" : "NOTIF_DATE_TIME",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "PRIORITY",
+    "targetField" : "PRIORITY",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "MNTCALL_NO",
+    "targetField" : "MNTCALL_NO",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "MARKER_DIST_END",
+    "targetField" : "MARKER_DIST_END",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "NOTIF_NUM",
+    "targetField" : "NOTIF_NUM",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "SALES_ORG_LOC",
+    "targetField" : "SALES_ORG_LOC",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "NOTIFTMEZ",
+    "targetField" : "NOTIFTMEZ",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "REF_DATE_TIME",
+    "targetField" : "REF_DATE_TIME",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "PP_WKCTR",
+    "targetField" : "PP_WKCTR",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "CHANGED_BY",
+    "targetField" : "CHANGED_BY",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "COSTCENTER",
+    "targetField" : "COSTCENTER",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "SERIALNO",
+    "targetField" : "SERIALNO",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "MATERIAL",
+    "targetField" : "MATERIAL",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "CREATED_ON",
+    "targetField" : "CREATED_ON",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "PM_WKCTR",
+    "targetField" : "PM_WKCTR",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "CONVERT_TO_WO",
+    "targetField" : "CONVERT_TO_WO",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "TIMESTAMP",
+    "targetField" : "TIMESTAMP",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "BREAKDOWN",
+    "targetField" : "BREAKDOWN",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "DIST_CHAN_LOC",
+    "targetField" : "DIST_CHAN_LOC",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "MASTER_WRRNTY_NO",
+    "targetField" : "MASTER_WRRNTY_NO",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "ADDR_NUMBER",
+    "targetField" : "ADDR_NUMBER",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "STRML_DATE_TIME",
+    "targetField" : "STRML_DATE_TIME",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "CODE_GRP_PROBLEM",
+    "targetField" : "CODE_GRP_PROBLEM",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "WC_SHORT_DESC",
+    "targetField" : "WC_SHORT_DESC",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "REFTIME",
+    "targetField" : "REFTIME",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "OFFSET1_TYPE",
+    "targetField" : "OFFSET1_TYPE",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "SHORT_TEXT",
+    "targetField" : "SHORT_TEXT",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "PROBLEM_TEXT",
+    "targetField" : "PROBLEM_TEXT",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "LONG_TEXT",
+    "targetField" : "LONG_TEXT",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "DESSTTIME",
+    "targetField" : "DESSTTIME",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "SERVER_GROUP",
+    "targetField" : "SERVER_GROUP",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "STRMLFNDATE",
+    "targetField" : "STRMLFNDATE",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "STDGORD",
+    "targetField" : "STDGORD",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "NOTIF_TIME",
+    "targetField" : "NOTIF_TIME",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "MAINTITEM",
+    "targetField" : "MAINTITEM",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "MARKER_START",
+    "targetField" : "MARKER_START",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "TECH_OBJ_DESC",
+    "targetField" : "TECH_OBJ_DESC",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "LTEXT",
+    "targetField" : "LTEXT",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "OFFSET1_VALUE",
+    "targetField" : "OFFSET1_VALUE",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "STAT_PROF",
+    "targetField" : "STAT_PROF",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "REJECTED",
+    "targetField" : "REJECTED",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "INTERNAL_NUMBER",
+    "targetField" : "INTERNAL_NUMBER",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "CO_AREA",
+    "targetField" : "CO_AREA",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "USER_ST",
+    "targetField" : "USER_ST",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "STLMTORDER",
+    "targetField" : "STLMTORDER",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "MANU_WRRNTY_ENDT",
+    "targetField" : "MANU_WRRNTY_ENDT",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "MAINTPLANT",
+    "targetField" : "MAINTPLANT",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "LINEAR_UNIT",
+    "targetField" : "LINEAR_UNIT",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "OFFSET2_TYPE",
+    "targetField" : "OFFSET2_TYPE",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "ORDER_TEXT",
+    "targetField" : "ORDER_TEXT",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "COMP_CODE",
+    "targetField" : "COMP_CODE",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "DESENDDATE",
+    "targetField" : "DESENDDATE",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "BUS_AREA",
+    "targetField" : "BUS_AREA",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "DESEN_DATE_TIME",
+    "targetField" : "DESEN_DATE_TIME",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "DESST_DATE_TIME",
+    "targetField" : "DESST_DATE_TIME",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "SCENARIO",
+    "targetField" : "SCENARIO",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "MAINTROOM",
+    "targetField" : "MAINTROOM",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "DOC_NUMBER",
+    "targetField" : "DOC_NUMBER",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "ORDER_NUM",
+    "targetField" : "ORDER_NUM",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "PART_OBJECT",
+    "targetField" : "PART_OBJECT",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "ISOCODE_UNIT",
+    "targetField" : "ISOCODE_UNIT",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "TIME_ZONE",
+    "targetField" : "TIME_ZONE",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "WORK_CENTER",
+    "targetField" : "WORK_CENTER",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "PLANPLANT",
+    "targetField" : "PLANPLANT",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "EQUIP_NUM",
+    "targetField" : "EQUIP_NUM",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "DIVISION_LOC",
+    "targetField" : "DIVISION_LOC",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "MARKER_END",
+    "targetField" : "MARKER_END",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "SYS_STATUS",
+    "targetField" : "SYS_STATUS",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "DOWNTIME",
+    "targetField" : "DOWNTIME",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "CREATED_BY",
+    "targetField" : "CREATED_BY",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "NOTIF_DATE",
+    "targetField" : "NOTIF_DATE",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "NOTIF_TYPE",
+    "targetField" : "NOTIF_TYPE",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "ASSEMBLY",
+    "targetField" : "ASSEMBLY",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "ENDMLFNTIME",
+    "targetField" : "ENDMLFNTIME",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "CHANGED_ON",
+    "targetField" : "CHANGED_ON",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "SERVER_ID",
+    "targetField" : "SERVER_ID",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "DESENDTM",
+    "targetField" : "DESENDTM",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "ASSEMBLY_VERSION",
+    "targetField" : "ASSEMBLY_VERSION",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "FUNC_LOCATION",
+    "targetField" : "FUNC_LOCATION",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "OBJECT_NO",
+    "targetField" : "OBJECT_NO",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "ORDER_TYPE",
+    "targetField" : "ORDER_TYPE",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "WRRNTY_START_DT",
+    "targetField" : "WRRNTY_START_DT",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "PURCH_DATE",
+    "targetField" : "PURCH_DATE",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "MAINTLOC",
+    "targetField" : "MAINTLOC",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "PRILANG",
+    "targetField" : "PRILANG",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "CUST_NO",
+    "targetField" : "CUST_NO",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "ENDMLFNDATE",
+    "targetField" : "ENDMLFNDATE",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "ASSEMBLY_GUID",
+    "targetField" : "ASSEMBLY_GUID",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "MANU_WRRNTY_STDT",
+    "targetField" : "MANU_WRRNTY_STDT",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "CODE_GRP_PART",
+    "targetField" : "CODE_GRP_PART",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "SALES_GRP",
+    "targetField" : "SALES_GRP",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "MATERIAL_VERSION",
+    "targetField" : "MATERIAL_VERSION",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "CREATED_AT",
+    "targetField" : "CREATED_AT",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "PRIORITY_TYPE",
+    "targetField" : "PRIORITY_TYPE",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "END_POINT",
+    "targetField" : "END_POINT",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "START_POINT",
+    "targetField" : "START_POINT",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "ASSEMBLY_EXT",
+    "targetField" : "ASSEMBLY_EXT",
+    "type" : "request_response"
+  } ]
+}

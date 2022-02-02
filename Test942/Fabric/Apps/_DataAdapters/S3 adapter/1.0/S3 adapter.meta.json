@@ -1,0 +1,46 @@
+{"zipMeta": {
+  "displayName": "S3 adapter",
+  "author": "Kony",
+  "basePackage": "com.kony.adapter.raml",
+  "description": "S3 adapter",
+  "supportedOdataCriteriaParams": [],
+  "adapterType": "raml",
+  "version": "1.0",
+  "serviceDefProps": {
+    "ramlStream": "S3 adapter.zip",
+    "basepackage": "com.kony.adapter.raml"
+  },
+  "fileSize": 189525,
+  "preferredBatchingType": "none",
+  "supportedFeatureTypes": [
+    "integration",
+    "object"
+  ],
+  "zipName": "ramlStream",
+  "name": "S3 adapter",
+  "templateContainer": {
+    "groupName": "Binary",
+    "binaryService": [
+      {
+        "templates": [{
+          "path": "/templates/uploadInitiate.json",
+          "name": "uploadInitiate.json",
+          "templateData": "{\r\n\t\"endpointUrl\": \"https://${bucketName}.s3.amazonaws.com/${objectName}\",\r\n\t\"method\": \"PUT\",\r\n\t\"Host\": \"${bucketName}.s3.amazonaws.com\",\r\n\t\"RequestBody\": \"${fileContent}\",\r\n\t\"Auth\": \"HMACDigest\",\r\n\t\"uploadMode\":\"binary\",\r\n\t\"AuthParameters\": {\r\n\t\t\"accessKeyID\": \"${accessKeyID}\",\r\n\t\t\"secretAccessKey\": \"${secretAccessKey}\",\r\n\t\t\"bucketName\":\"${bucketName}\",\r\n\t\t\"regionName\": \"${regionName}\",\r\n\t\t\"serviceName\": \"s3\",\r\n\t\t\"objectName\": \"${objectName}\"\r\n\t}\r\n}"
+        }],
+        "name": "post_files_content",
+        "type": "upload"
+      },
+      {
+        "templates": [{
+          "path": "/templates/downloadInitiate.json",
+          "name": "downloadInitiate.json",
+          "templateData": "{\r\n\t\"endpointUrl\": \"https://${bucketName}.s3.amazonaws.com/${objectName}\",\r\n\t\"method\": \"GET\",\r\n\t\"Host\": \"${bucketName}.s3.amazonaws.com\",\r\n\t\"Auth\": \"HMACDigest\",\r\n\t\"AuthParameters\": {\r\n\t\t\"accessKeyID\": \"${accessKeyID}\",\r\n\t\t\"secretAccessKey\": \"${secretAccessKey}\",\r\n\t\t\"bucketName\":\"${bucketName}\",\r\n\t\t\"regionName\": \"${regionName}\",\r\n\t\t\"serviceName\": \"s3\",\r\n\t\t\"objectName\": \"${objectName}\"\r\n\t}\r\n}"
+        }],
+        "name": "get_files_fileId_content",
+        "type": "download"
+      }
+    ]
+  },
+  "minMobileFabricSupportedVersion": "8.2",
+  "authenticationType": "oauth2"
+}}

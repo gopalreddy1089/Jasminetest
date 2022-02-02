@@ -1,0 +1,170 @@
+{
+    "AsyncTestService_File": {
+        "servicename": "AsyncTestService",
+        "serviceid": "7e49690a-be81-4331-9929-ede32a5fa391",
+        "type": "objectsvcs",
+        "objectname": "File",
+        "objectid": "14114"
+    },
+    "BooleanConversionService_designations": {
+        "servicename": "BooleanConversionService",
+        "serviceid": "131b0ed4-3b7c-4ee3-a21d-ad2286fc0749",
+        "type": "objectsvcs",
+        "objectname": "designations",
+        "objectid": "14092"
+    },
+    "BooleanConversionService_employees": {
+        "servicename": "BooleanConversionService",
+        "serviceid": "131b0ed4-3b7c-4ee3-a21d-ad2286fc0749",
+        "type": "objectsvcs",
+        "objectname": "employees",
+        "objectid": "14093"
+    },
+    "boxObjectService_image": {
+        "servicename": "boxObjectService",
+        "serviceid": "5f07b7de-dedb-4071-9019-7cf72668cd93",
+        "type": "objectsvcs",
+        "objectname": "image",
+        "objectid": "14084"
+    },
+    "ContactOS_binaryContact": {
+        "servicename": "ContactOS",
+        "serviceid": "2123f347-6e4a-458f-9be7-7a30b73490f8",
+        "type": "objectsvcs",
+        "objectname": "binaryContact",
+        "objectid": "14055"
+    },
+    "ContactOS_contact": {
+        "servicename": "ContactOS",
+        "serviceid": "2123f347-6e4a-458f-9be7-7a30b73490f8",
+        "type": "objectsvcs",
+        "objectname": "contact",
+        "objectid": "14056"
+    },
+    "EventOS_event": {
+        "servicename": "EventOS",
+        "serviceid": "d41b97c3-a8b9-4809-9cdd-b84d43265368",
+        "type": "objectsvcs",
+        "objectname": "event",
+        "objectid": "14013"
+    },
+    "EventOS_event_speaker": {
+        "servicename": "EventOS",
+        "serviceid": "d41b97c3-a8b9-4809-9cdd-b84d43265368",
+        "type": "objectsvcs",
+        "objectname": "event_speaker",
+        "objectid": "14014"
+    },
+    "EventOS_speaker": {
+        "servicename": "EventOS",
+        "serviceid": "d41b97c3-a8b9-4809-9cdd-b84d43265368",
+        "type": "objectsvcs",
+        "objectname": "speaker",
+        "objectid": "14015"
+    },
+    "EventOS_venue": {
+        "servicename": "EventOS",
+        "serviceid": "d41b97c3-a8b9-4809-9cdd-b84d43265368",
+        "type": "objectsvcs",
+        "objectname": "venue",
+        "objectid": "14016"
+    },
+    "RDBMSHierarchy_eventhierarchy": {
+        "servicename": "RDBMSHierarchy",
+        "serviceid": "d0b3d9ad-dda5-449e-a511-d587d6ed9690",
+        "type": "objectsvcs",
+        "objectname": "eventhierarchy",
+        "objectid": "13991"
+    },
+    "RDBMSHierarchy_venuehierarchy": {
+        "servicename": "RDBMSHierarchy",
+        "serviceid": "d0b3d9ad-dda5-449e-a511-d587d6ed9690",
+        "type": "objectsvcs",
+        "objectname": "venuehierarchy",
+        "objectid": "13992"
+    },
+    "RDBMSObjectService_media": {
+        "servicename": "RDBMSObjectService",
+        "serviceid": "f3c6718d-71a6-4f66-b95a-1063141dea16",
+        "type": "objectsvcs",
+        "objectname": "media",
+        "objectid": "13959"
+    },
+    "RDBMSObjectService_product": {
+        "servicename": "RDBMSObjectService",
+        "serviceid": "f3c6718d-71a6-4f66-b95a-1063141dea16",
+        "type": "objectsvcs",
+        "objectname": "product",
+        "objectid": "13960"
+    },
+    "S3ObjectSvc_getBinary": {
+        "servicename": "S3ObjectSvc",
+        "serviceid": "56851bbd-2f5a-4728-affe-009d27468d23",
+        "type": "objectsvcs",
+        "objectname": "getBinary",
+        "objectid": "13950"
+    },
+    "S3ObjectSvc_uploadBinary": {
+        "servicename": "S3ObjectSvc",
+        "serviceid": "56851bbd-2f5a-4728-affe-009d27468d23",
+        "type": "objectsvcs",
+        "objectname": "uploadBinary",
+        "objectid": "13951"
+    },
+    "SalesforceDB_Category": {
+        "servicename": "SalesforceDB",
+        "serviceid": "5e15d5f7-e4b0-4a68-9ad1-a0d3728fc1ea",
+        "type": "objectsvcs",
+        "objectname": "Category",
+        "objectid": "13929"
+    },
+    "SalesforceDB_Category2": {
+        "servicename": "SalesforceDB",
+        "serviceid": "5e15d5f7-e4b0-4a68-9ad1-a0d3728fc1ea",
+        "type": "objectsvcs",
+        "objectname": "Category2",
+        "objectid": "13930"
+    },
+    "sapobj_EAM_ADDRESS": {
+        "servicename": "sapobj",
+        "serviceid": "c86e7413-e613-43e6-ac1a-e76749d5410c",
+        "type": "objectsvcs",
+        "objectname": "EAM_ADDRESS",
+        "objectid": "13872"
+    },
+    "sapobj_EAM_NOTIF": {
+        "servicename": "sapobj",
+        "serviceid": "c86e7413-e613-43e6-ac1a-e76749d5410c",
+        "type": "objectsvcs",
+        "objectname": "EAM_NOTIF",
+        "objectid": "13873"
+    },
+    "sapobj_EAM_NOTIFICATION_ADDRESS": {
+        "servicename": "sapobj",
+        "serviceid": "c86e7413-e613-43e6-ac1a-e76749d5410c",
+        "type": "objectsvcs",
+        "objectname": "EAM_NOTIFICATION_ADDRESS",
+        "objectid": "13874"
+    },
+    "sapobj_EAM_NOTIF_DIST": {
+        "servicename": "sapobj",
+        "serviceid": "c86e7413-e613-43e6-ac1a-e76749d5410c",
+        "type": "objectsvcs",
+        "objectname": "EAM_NOTIF_DIST",
+        "objectid": "13875"
+    },
+    "sapobj_abc": {
+        "servicename": "sapobj",
+        "serviceid": "c86e7413-e613-43e6-ac1a-e76749d5410c",
+        "type": "objectsvcs",
+        "objectname": "abc",
+        "objectid": "13876"
+    },
+    "StorageObjectService_binary": {
+        "servicename": "StorageObjectService",
+        "serviceid": "ddb5d6d0-ccb4-445b-b4eb-8d9574bbb861",
+        "type": "objectsvcs",
+        "objectname": "binary",
+        "objectid": "13850"
+    }
+}

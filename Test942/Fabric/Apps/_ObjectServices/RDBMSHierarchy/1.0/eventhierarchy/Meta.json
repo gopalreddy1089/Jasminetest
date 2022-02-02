@@ -1,0 +1,67 @@
+{
+  "type" : "lob",
+  "custom" : false,
+  "junction" : false,
+  "customizable" : false,
+  "verbs" : {
+    "get" : "getMapping",
+    "create" : "createMapping",
+    "update" : "updateMapping",
+    "delete" : "deleteMapping"
+  },
+  "entityProperties" : {
+    "BatchMode" : "pagination",
+    "UpdateTimeStampField" : {
+      "DateFormat" : "",
+      "Name" : "addedDateTime"
+    },
+    "SoftDeleteFlagField" : {
+      "ActiveValue" : "false",
+      "InactiveValue" : "true",
+      "Name" : "is_disabled"
+    },
+    "backendMeta" : {
+      "backendObjectName" : "eventhierarchy",
+      "qualifiedName" : "events.eventhierarchy",
+      "metadataformatterobject" : "{\"name\":\"eventhierarchy\",\"displayName\":\"eventhierarchy\",\"qualifiedName\":\"events.eventhierarchy\",\"schemaName\":\"events\",\"tableName\":\"eventhierarchy\",\"entityType\":\"com.kony.rdbms.metadata.model.AnnotatedTable\"}"
+    },
+    "designTimeBackendMeta" : {
+      "backendObjectName" : "eventhierarchy",
+      "qualifiedName" : "events.eventhierarchy",
+      "metadataformatterobject" : "{\"name\":\"eventhierarchy\",\"displayName\":\"eventhierarchy\",\"qualifiedName\":\"events.eventhierarchy\",\"schemaName\":\"events\",\"tableName\":\"eventhierarchy\",\"entityType\":\"com.kony.rdbms.metadata.model.AnnotatedTable\"}"
+    }
+  },
+  "commonMappings" : [ {
+    "sourceFieldName" : "end_date",
+    "targetField" : "end_date",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "addedDateTime",
+    "targetField" : "addedDateTime",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "event_id",
+    "targetField" : "event_id",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "is_disabled",
+    "targetField" : "is_disabled",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "title",
+    "targetField" : "title",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "venue_id",
+    "targetField" : "venue_id",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "long_desc",
+    "targetField" : "long_desc",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "start_date",
+    "targetField" : "start_date",
+    "type" : "request_response"
+  } ]
+}

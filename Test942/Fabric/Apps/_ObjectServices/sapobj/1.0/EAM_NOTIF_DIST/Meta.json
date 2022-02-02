@@ -1,0 +1,91 @@
+{
+  "type" : "lob",
+  "custom" : false,
+  "junction" : false,
+  "customizable" : false,
+  "verbs" : {
+    "get" : "getMapping",
+    "update" : "updateMapping",
+    "create" : "createMapping",
+    "partialupdate" : "partialupdateMapping",
+    "delete" : "deleteMapping"
+  },
+  "entityProperties" : {
+    "UpdateTimeStampField" : {
+      "DateFormat" : "yyyyMMddHHmmss",
+      "Name" : "TIMESTAMP"
+    },
+    "SoftDeleteFlagField" : {
+      "ActiveValue" : null,
+      "InactiveValue" : "X",
+      "Name" : "DELETE_IND"
+    },
+    "backendMeta" : {
+      "dataObjectName" : "EAM_DOB_NOTIF",
+      "libraryName" : "_SKYTECH_EAM",
+      "businessObjectName" : "EAM_NOTIF_DIST"
+    },
+    "designTimeBackendMeta" : {
+      "dataObjectName" : "EAM_DOB_NOTIF",
+      "libraryName" : "_SKYTECH_EAM",
+      "businessObjectName" : "EAM_NOTIF_DIST"
+    }
+  },
+  "commonMappings" : [ {
+    "sourceFieldName" : "STAT_PROF",
+    "targetField" : "STAT_PROF",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "REJECTED",
+    "targetField" : "REJECTED",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "INTERNAL_NUMBER",
+    "targetField" : "INTERNAL_NUMBER",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "PLANT",
+    "targetField" : "PLANT",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "DIST_KEY",
+    "targetField" : "DIST_KEY",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "DELETE_IND",
+    "targetField" : "DELETE_IND",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "WORK_CENTER",
+    "targetField" : "WORK_CENTER",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "OPMODE",
+    "targetField" : "OPMODE",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "NOTIF_NUM",
+    "targetField" : "NOTIF_NUM",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "DESSTTIME",
+    "targetField" : "DESSTTIME",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "TIMESTAMP",
+    "targetField" : "TIMESTAMP",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "DESSTDATE",
+    "targetField" : "DESSTDATE",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "USER_STATUS",
+    "targetField" : "USER_STATUS",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "USERID",
+    "targetField" : "USERID",
+    "type" : "request_response"
+  } ]
+}

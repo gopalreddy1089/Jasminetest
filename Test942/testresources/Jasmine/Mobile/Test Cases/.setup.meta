@@ -1,0 +1,17 @@
+{
+    "testCaseName": "setup",
+    "testSuiteName": "Test Cases",
+    "channelName": "Mobile",
+    "_currentForm": "Test942/Form1",
+    "timeout": 0,
+    "dataFileName": "setup_data",
+    "dataFileVarName": "testcaseData_1642395304669",
+    "datasetName": "dataset",
+    "appName": "Test942",
+    "usedBy": {
+        "Test942": [
+            "androidtestsuite.js"
+        ]
+    },
+    "userCode": true
+}

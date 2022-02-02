@@ -1,0 +1,7 @@
+{
+  "serviceType" : "integration",
+  "dataAdapter" : {
+    "name" : "File System Adapter",
+    "version" : "1.0"
+  }
+}

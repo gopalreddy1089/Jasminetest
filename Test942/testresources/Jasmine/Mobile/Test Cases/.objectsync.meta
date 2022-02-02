@@ -1,0 +1,15 @@
+{
+    "testCaseName": "objectsync",
+    "testSuiteName": "Test Cases",
+    "channelName": "Mobile",
+    "_currentForm": "Test942/Form1",
+    "timeout": 0,
+    "dataFileName": "objectsync_data",
+    "dataFileVarName": "testcaseData_1642395522626",
+    "datasetName": "dataset",
+    "appName": "Test942",
+    "usedBy": {
+        "Test942": []
+    },
+    "userCode": true
+}

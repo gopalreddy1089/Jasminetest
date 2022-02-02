@@ -1,0 +1,42 @@
+{
+  "type" : "lob",
+  "custom" : false,
+  "junction" : false,
+  "customizable" : false,
+  "verbs" : {
+    "get" : "getMapping",
+    "create" : "createMapping",
+    "update" : "updateMapping",
+    "delete" : "deleteMapping"
+  },
+  "entityProperties" : {
+    "BatchMode" : "pagination",
+    "backendMeta" : {
+      "backendObjectName" : "product",
+      "qualifiedName" : "sdktesting.product",
+      "metadataformatterobject" : "{\"name\":\"product\",\"displayName\":\"product\",\"qualifiedName\":\"sdktesting.product\",\"schemaName\":\"sdktesting\",\"tableName\":\"product\",\"entityType\":\"com.kony.rdbms.metadata.model.AnnotatedTable\"}"
+    },
+    "designTimeBackendMeta" : {
+      "backendObjectName" : "product",
+      "qualifiedName" : "sdktesting.product",
+      "metadataformatterobject" : "{\"name\":\"product\",\"displayName\":\"product\",\"qualifiedName\":\"sdktesting.product\",\"schemaName\":\"sdktesting\",\"tableName\":\"product\",\"entityType\":\"com.kony.rdbms.metadata.model.AnnotatedTable\"}"
+    }
+  },
+  "commonMappings" : [ {
+    "sourceFieldName" : "price",
+    "targetField" : "price",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "name",
+    "targetField" : "name",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "description",
+    "targetField" : "description",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "id",
+    "targetField" : "id",
+    "type" : "request_response"
+  } ]
+}
