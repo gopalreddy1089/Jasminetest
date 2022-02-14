@@ -20,7 +20,7 @@
                 "isScreenShotEnabled": false
             },
             "actualMessage": {
-                "UUID": "aab132f7-c8e7-0915-cbd1-e1ccce088acf",
+                "UUID": "19e88962-7d26-aa86-1367-31055b6e9b74",
                 "messageType": "waitFor",
                 "messageData": {
                     "widgetType": "waitFor",
@@ -51,7 +51,7 @@
                     "actionType": "click",
                     "appName": "Test942"
                 },
-                "UUID": "db2b6934-6d87-455f-bef7-1ad89f7ecdc6"
+                "UUID": "5be5131a-5276-4bd0-8ce3-0410322d362e"
             },
             "codeNotReady": false,
             "metaEditable": false
@@ -62,7 +62,7 @@
             "activeActionIconClassName": "assets/widget_icons/activeloading.svg",
             "entity": "Wait in ms",
             "metaEditable": true,
-            "dispMeta": "1000",
+            "dispMeta": "2000",
             "contextMenu": {
                 "isAssertEnabled": false,
                 "isWaitForEnabled": false,
@@ -71,12 +71,12 @@
                 "isScreenShotEnabled": true
             },
             "actualMessage": {
-                "UUID": "30f08872-24f4-d5b0-7308-5a6f137fbb75",
+                "UUID": "73bd7492-4735-d3ee-53d7-37f936967aa0",
                 "messageType": "Wait",
                 "messageData": {
                     "widgetType": "Wait",
                     "metadata": {
-                        "waitTimeMS": "1000"
+                        "waitTimeMS": "2000"
                     }
                 }
             },
@@ -100,7 +100,7 @@
                 "isScreenShotEnabled": false
             },
             "actualMessage": {
-                "UUID": "ff355e86-d1c3-21d9-2c4d-3da3f8819cca",
+                "UUID": "d467139f-aa85-2c52-ab25-4628c3e82bd4",
                 "messageType": "Assert",
                 "messageData": {
                     "widgetType": "Assert",

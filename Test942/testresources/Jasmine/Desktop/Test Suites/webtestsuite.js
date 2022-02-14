@@ -4,7 +4,7 @@ define(["Test942/Test Cases/setup_data","Test942/Test Cases/setflow_data","Test9
 			var _data = testcaseData_1643635663040.dataset;
 			await kony.automation.playback.waitFor(["Test942/Form1","btnsetup"]);
 			kony.automation.button.click(["Test942/Form1","btnsetup"]);
-			await kony.automation.playback.wait(1000);
+			await kony.automation.playback.wait(2000);
 			expect(kony.automation.widget.getWidgetProperty(["Test942/Form1","setuplbl"], "text")).toEqual(_data.assert.setuplbl);
 		});
 		
