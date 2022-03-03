@@ -785,7 +785,7 @@
     "support64bitandwear": "false",
     "supportX86Devices": "false",
     "supportX86Devicesandwear": "false",
-    "support_arm_32bit": true,
+    "support_arm_32bit": false,
     "support_arm_64bit": true,
     "support_x86_32bit": false,
     "support_x86_64bit": true,
