@@ -2,13 +2,13 @@
     "assetPlatform": "Visualizer",
     "assetVersion": "1.0.0",
     "createdBy": "bvtuser@temenos.com",
-    "createdMFVersion": "9.4.0.0",
+    "createdMFVersion": "9.5.0.0",
     "createdVizVersion": "9.4.0",
-    "currentMFVersion": "9.4.0.0",
-    "currentVizVersion": "9.4.0",
+    "currentMFVersion": "9.5.0.0",
+    "currentVizVersion": "9.4.5",
     "itemCategory": "app",
     "itemGuid": "ee1d47f026964c7d97190bd1c191d43d",
     "itemName": "Test942",
     "libraryVersion": "libver4",
-    "modifiedBy": "bvtuser@temenos.com"
+    "modifiedBy": "gopal.reddybapathu@temenos.com"
 }

@@ -276,7 +276,7 @@
     },
     "createdVizVersion": "9.4.0",
     "createdgaversion": "9.4.0",
-    "currentgaversion": "9.4.0",
+    "currentgaversion": "9.4.5",
     "deeplinkkey": "None",
     "defaultZIndex": "1",
     "defaultlocalekey": "",
@@ -465,7 +465,7 @@
             "version": "1.0"
         }
     },
-    "konyVizVersion": "9.4.0",
+    "konyVizVersion": "9.4.5",
     "lastmodifiedtime": "1635410581444",
     "location": "false",
     "mangoapptitlekey": ",,,,,,",
@@ -740,7 +740,6 @@
     "protectedmodeenabled_android": "false",
     "protectedmodeenabled_androidwear": "false",
     "protectedmodeenabled_ios": "false",
-    "prototype": {},
     "proximity": "false",
     "pushcertificatetype": "",
     "pwaUrl": "",
@@ -1019,5 +1018,6 @@
     "wp8textnotificationkey": "false",
     "wp8tilestemplatekey": "FLIP_TILE",
     "wp8tilestitlekey": "",
-    "xhtmlfavicokey": ""
+    "xhtmlfavicokey": "",
+    "export.type": "visualizer"
 }
